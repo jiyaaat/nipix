@@ -1,10 +1,11 @@
-
+import banner1 from './img/banner1.jpeg'
+import './App.css'
 
 function Home() {
     return (
         <div>
             {/* Your Home component content */}
-            <h1>Welcome to Home!</h1>
+            <img class= "banner" src={banner1} alt= "banner"/>
         </div>
     );
 }
