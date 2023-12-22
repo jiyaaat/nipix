@@ -1,4 +1,6 @@
 import './Navbar.css'
+import { Link } from 'react-router-dom';
+import {Home} from './Home.js'
 
 function Navbar() {
     return( 
@@ -8,10 +10,10 @@ function Navbar() {
             <p>NIPIX TECH</p>
         </div>
         <ul class="nav-sections">
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Learn</a></li>
-            <li><a href="/">Contact Us</a></li>
-            <li><a href="/">Sign Up</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/Learn">Learn</Link></li>
+            <li><Link to="/ContactUs">Contact Us</Link></li>
+            <li><Link to="/SignUp">Sign Up</Link></li>
         </ul>
         </nav>
         
