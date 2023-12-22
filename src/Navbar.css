@@ -1,20 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    font-family: 'Montserrat', sans-serif;
-    
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
 p{
     color: #000000;
 }
@@ -26,6 +9,7 @@ nav, .nav-sections{
     
 }
 nav{
+
     justify-content: space-around;
     align-items: center;
     height: 17vh;
@@ -33,6 +17,7 @@ nav{
 .content{
     font-size: 20px;
     font-weight: 600;
+    position: relative;
 }
 .content:hover{
     cursor:default;
