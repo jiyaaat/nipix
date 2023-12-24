@@ -20,7 +20,7 @@ const LearningPath = () => {
 
   return (
     <div className="max-width-container">
-      <h2 className="learning-path-title">🏁 Learning Path</h2>
+      <h2 className="learning-path-title">🔖 Learning Path 🔖</h2>
       <div className="grid-container">
         {learningSteps.map((step) => (
           <div
