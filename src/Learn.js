@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Learn.css';
 
 const cardData = [
   {
     id: 1,
     backgroundImage: 'url("./physics.jpeg")',
-    nextpagelink: 'https://example.com/page1',
+    nextpagelink: '/Learn/Physics',
   },
   {
     id: 2,
@@ -62,11 +63,12 @@ const Learn = () => {
             </div>
             {flippedCard === card.id && (
               <div className="flip-card-back">
-                <a href={card.nextpagelink} target="_blank" rel="noopener noreferrer">
+                <Link to={card.nextpagelink}>
                   <button className='btn'>Let's start Learning</button>
-                </a>
+                </Link>
               </div>
             )}
+
           </div>
         </div>
       ))}

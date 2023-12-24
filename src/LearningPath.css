@@ -1,0 +1,78 @@
+/* Learning Path Styles */
+
+/* Container styles */
+.max-width-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Title styles */
+  .learning-path-title {
+    text-align: center;
+    font-size: 3rem;
+    margin: 30px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Grid layout for milestones */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  /* Milestone card styles */
+  .milestone {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .milestone img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    margin-bottom: 20px;
+  }
+  
+  .milestone h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .milestone p {
+    margin-bottom: 120px;
+    color: #666;
+  }
+  
+  /* Button styles */
+  .milestone button {
+    font-weight: bold;
+    padding: 10px 20px;
+    border-color: transparent;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Start learning button */
+  .milestone button.start-learning {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  /* Completed button */
+  .milestone button.completed {
+    background-color: #9ccc65;
+    color: #fff;
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+  
+  
