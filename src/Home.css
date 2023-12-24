@@ -1,4 +1,7 @@
-
+body{
+    background-image: url(https://png.pngtree.com/background/20210710/original/pngtree-simple-kid-grass-play-background-picture-image_1032023.jpg);
+    background-size: cover;
+}
 .banner{
     margin-top: 5px;
     margin-bottom: 40px;
@@ -91,4 +94,3 @@
     display: table;
     clear: both;
 }
-
