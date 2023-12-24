@@ -1,9 +1,9 @@
-import Banner from './img/Banner.png'
+import Banner from './img/Bannernew.png'
 import Business from './img/Business Pitch Desk  .png';
 import './App.css'
 import './Navbar.css'
 import './Home.css'
-import Logo from './img/logo.jpeg'
+import Logo from './img/logonew.png'
 function Home() {
     return (
         <div class="Home">
