@@ -6,6 +6,7 @@ const cardData = [
   {
     id: 1,
     backgroundImage: 'url("./physics.jpeg")',
+    route: 'LearningPath',
   },
   {
     id: 2,
@@ -51,7 +52,7 @@ const Learn = () => {
           onMouseLeave={() => handleHover(null)}
           onFocus={() => handleHover(card.id)}
           onBlur={() => handleHover(null)}
-          onClick={()=> navigate('LearningPath')}
+          onClick={()=> navigate(card.route)}
         >
           <div className="flip-card-inner">
             <div className="flip-card-front" style={{ backgroundImage: card.backgroundImage }}>

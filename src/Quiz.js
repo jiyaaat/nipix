@@ -97,7 +97,7 @@ const Quiz = () => {
             )}
             {!showResult && timer === 0 ? null : (
               <>
-                <h3>Result</h3>
+                <h1>Result</h1>
                 <p>
                   Total Question: <span>{quiz.questions.length}</span>
                 </p>

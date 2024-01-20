@@ -3,12 +3,16 @@ import Business from './img/Business Pitch Desk  .png';
 import './App.css'
 import './Navbar.css'
 import './Home.css'
+import ImageSlider from './ImageSlider';
 import Logo from './img/logonew.png'
+
+
+
 function Home() {
     return (
-        <div class="Home">
+        <div className="Home">
             <div className='banner'>
-                <img src={Banner}></img>
+                <ImageSlider />
             </div>
             <div className="about-us-container">
             <div className="left-section">
@@ -16,7 +20,7 @@ function Home() {
             </div>
             <div className="right-section">
                 {/* Content for About Us */}
-                <h2>About Us</h2>
+                <h2 className='text-white'>About Us</h2>
                 <p>
                 Nipixtech is a forward-thinking technology company committed to solving real-world problems through innovative products and services. With a strong emphasis on cutting-edge technology and a passion for creating positive change, Nipixtech is at the forefront of transforming industries and improving lives.
                 Driven by our belief that technology has the power to revolutionize the way we live and work, we have assembled a talented team of engineers, designers, and industry experts who are dedicated to pushing the boundaries of what is possible. 

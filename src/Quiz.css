@@ -3,21 +3,24 @@
 
 .main-body{
     font-family: 'Anek Malayalam', sans-serif;
-    background: url("https://media.istockphoto.com/id/1478776181/video/flying-pink-neon-question-marks-on-a-black-background-3d-animation-question-mark-looping.jpg?s=640x640&k=20&c=5iaBIXjs7ydswVcvKqjjqRySe6ksY2njjWn4h3SYQFQ=");
+    background-image: url('./img/quiz_bg.jpg');
     background-size: cover;
     color: #11052c;
     display: flex;
     justify-content: center;
-    margin: 0;
     padding: 0 30px;
     height: 100vh;
+    border-radius: 40px;
+    width : 70%;
+    margin: 0 auto; 
+    
   }
   
 .quiz-container {
   max-width: 500px;
   min-width: 250px;
-  background: #ffffff;
-  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 40px;
   margin-top: 100px;
   padding: 30px 60px;
   margin-bottom: 100px;
@@ -28,7 +31,7 @@
 .quiz-container .active-question-no {
   font-size: 32px;
   font-weight: 500;
-  color: #800080;
+  color: #220080;
 }
 
 .quiz-container .total-question {
@@ -62,12 +65,12 @@
 }
 
 .quiz-container ul .selected-answer {
-  background: #ffd6ff;
-  border: 1px solid #800080;
+  background: #e4e7f4;
+  border: 1px solid #40439c;
 }
 
 .quiz-container button {
-  background: linear-gradient(90.04deg, #800080 0.03%, #ffc0cb 99.96%);
+  background: linear-gradient(90.04deg, #40439c 0.03%, #b1b7dc 99.96%);
   border-radius: 9px;
   font-size: 18px;
   color: #ffffff;
@@ -89,8 +92,10 @@
   justify-content: flex-end;
 }
 
-.result h3 {
-  font-size: 24px;
+.result h1 {
+  font-size: 34px;
+  color: #11052c;
+  margin-bottom: 20px;
   letter-spacing: 1.4px;
   text-align: center;
 }
@@ -101,7 +106,7 @@
 }
 
 .result p span {
-  color: #800080;
+  color: #40439c;
   font-size: 22px;
 }
 .timer-over-message{
