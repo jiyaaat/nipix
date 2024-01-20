@@ -1,5 +1,6 @@
 // LearningPath.js
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './LearningPath.css'; // Import the CSS file
 
 const Card = ({ title, description, completed, onClick, backgroundImage }) => {
@@ -18,6 +19,7 @@ const Card = ({ title, description, completed, onClick, backgroundImage }) => {
 };
 
 const LearningPath = () => {
+  const navigate = useNavigate();
   const learningSteps = [
     { id: 1, title: 'Basic Energy Concepts', backgroundImage: 'https://img.freepik.com/premium-photo/clean-electric-energy-concept-from-renewable-wind-source-green-fields-ai-generated_700226-2181.jpg' },
     { id: 2, title: 'Climate Awareness', backgroundImage:"https://images.saymedia-content.com/.image/t_share/MTc0Mjg5NzY4MDM5OTE3NDM2/the-top-10-environmental-concerns-facing-todays-society.jpg" },
@@ -44,7 +46,7 @@ const LearningPath = () => {
             title={step.title}
             description={`Step ${step.id}`}
             completed={step.completed}
-            onClick={() => "/Learn/LearningPath/Quiz"}
+            onClick={() => navigate('Quiz')}
             backgroundImage={step.backgroundImage}
           />
         ))}
