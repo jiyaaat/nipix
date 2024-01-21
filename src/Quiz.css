@@ -37,7 +37,7 @@
 .quiz-container .total-question {
   font-size: 16px;
   font-weight: 500;
-  color: #e0dee3;
+  color: #12166a;
 }
 
 .quiz-container h2 {
@@ -92,6 +92,7 @@
   justify-content: flex-end;
 }
 
+
 .result h1 {
   font-size: 34px;
   color: #11052c;
@@ -103,6 +104,7 @@
 .result p {
   font-size: 16px;
   font-weight: 500;
+  color: #11052c;
 }
 
 .result p span {
@@ -111,4 +113,9 @@
 }
 .timer-over-message{
     text-align: center;
+    color: #11052c;
+}
+
+.timer{
+  color: #11052c;
 }

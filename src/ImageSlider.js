@@ -38,7 +38,7 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="flex items-center flex-col justify-center h-screen relative overflow-hidden">
+    <div className="flex items-center flex-col justify-center h-screen relative overflow-hidden mb-[10%]">
       {images.map((image, index) => (
         <motion.img
           key={index}
@@ -52,7 +52,7 @@ const ImageSlider = () => {
           style={{ width: "60%", maxWidth: "400px", position: "absolute" }}
         />
       ))}
-      <div className="flex flex-row gap-3 absolute bottom-10">
+      <div className="flex flex-row gap-3  absolute bottom-10">
         <button className="text-white bg-indigo-500 rounded-md py-2 px-4 opacity-80 hover:opacity-100 focus:outline-none" onClick={handleBack}>
           Back
         </button>

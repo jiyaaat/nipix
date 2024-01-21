@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 body {
-    background-image: url('./img/LandingPageBg.jpg');
+    background-image: url('./img/bg_new.jpg');
     background-size: cover;
     margin: 0;
   padding: 0;
@@ -53,10 +55,10 @@ body {
 }
 
 .right-section p {
-    font-size: 12px;
-    line-height: 2;
+    font-size: 14px;
+    line-height: 1.6;
     color: #fff;
-    text-align: justify; /* Justify the text for About Us content */
+    text-align:justify; /* Justify the text for About Us content */
 }
 
 

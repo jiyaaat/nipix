@@ -1,18 +1,33 @@
-import Banner from './img/Bannernew.png'
-import Business from './img/Business Pitch Desk  .png';
 import './App.css'
 import './Navbar.css'
 import './Home.css'
+import { useEffect } from 'react';
 import ImageSlider from './ImageSlider';
+import Hero from './Hero';
 import Logo from './img/logonew.png'
 
 
 
 function Home() {
+    useEffect(() => {
+        const smoothScroll = () => {
+            const scrollContainer = document.querySelector('.Home');
+            scrollContainer.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            });
+        };
+
+        window.addEventListener('scroll', smoothScroll);
+
+        return () => {
+            window.removeEventListener('scroll', smoothScroll);
+        };
+    }, []);
     return (
         <div className="Home">
             <div className='banner'>
-                <ImageSlider />
+                <Hero />
             </div>
             <div className="about-us-container">
             <div className="left-section">
@@ -28,6 +43,7 @@ function Home() {
                 </p>
             </div>
         </div>
+        <ImageSlider />
         <div className="vision">
             <h2>🚩 Our Vision </h2>
             <p>Empowering passionate individuals to drive innovation in software and hardware, we cultivate a community fostering groundbreaking solutions that shape the future of the industry for societal benefit.</p>

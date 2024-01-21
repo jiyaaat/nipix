@@ -1,6 +1,5 @@
 import './Navbar.css'
 import { Link } from 'react-router-dom';
-import {Home} from './Home.js'
 
 function Navbar() {
     return( 
