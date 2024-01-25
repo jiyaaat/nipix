@@ -11,6 +11,7 @@ function Navbar() {
         <ul class="nav-sections">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/Learn">Learn</Link></li>
+            <li><Link to="/Events">Events</Link></li>
             <li><Link to="/ContactUs">Contact Us</Link></li>
             <li><Link to="/SignUp">Sign Up</Link></li>
         </ul>

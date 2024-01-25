@@ -1,5 +1,16 @@
 
-  
+body {
+  background-image: url('./img/bg_new.jpg');
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
   .cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -83,10 +94,13 @@
   }
   
   h1 {
-    font-size: 3rem;
+    font-size: 3rem!important;
     margin: 30px;
+    color: white;
   }
-  
+  .Learn{
+    text-align: center;
+  }
   /* Media Query for Smaller Screens */
   @media screen and (max-width: 768px) {
     .cards-container {

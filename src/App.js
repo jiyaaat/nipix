@@ -7,6 +7,7 @@ import ContactUs from './Contact';
 import SignUp from './SignUp';
 import LearningPath from './LearningPath'; 
 import Quiz from './Quiz';
+import Events from './Events';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Learn" element={<Learn />} />
+          <Route path="/Events" element={<Events/>} />
           <Route path="/Learn/LearningPath" element={<LearningPath />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/sign-up" element={<SignUp />} />

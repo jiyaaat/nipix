@@ -3,7 +3,8 @@
 
 .main-body{
     font-family: 'Anek Malayalam', sans-serif;
-    background-image: url('./img/quiz_bg.jpg');
+    /*background-image: url('https://t3.ftcdn.net/jpg/02/53/98/62/360_F_253986268_I3wMfXKQvcjNVcRSLDTMfKtkvbmpAj1J.jpg');*/
+    background: transparent;
     background-size: cover;
     color: #11052c;
     display: flex;

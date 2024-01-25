@@ -41,7 +41,7 @@ const Learn = () => {
 
   return (
     <div className='main'>
-        <h1>💡 Learn With Us 💡</h1>
+        <h1 className='Learn'>💡 Learn With Us 💡</h1>
     <div className="cards-container">
       {cardData.map((card) => (
         <div

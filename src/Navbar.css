@@ -3,6 +3,7 @@ p{
 }
 a, .btn{
     transition: all 300ms ease;
+    color: #fff;
 }
 nav, .nav-sections{
     display: flex;
@@ -28,10 +29,10 @@ nav{
     gap: 2rem;
     list-style: none;
     font-size: 18px;
-    
+    color: #fff;
 }
 a{
-    color: #000000;
+    color: #fff;
     text-decoration: none;
     text-decoration-color: #fff;
 }
