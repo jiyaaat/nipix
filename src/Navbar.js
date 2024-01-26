@@ -5,10 +5,10 @@ function Navbar() {
     return( 
     <div>
         <nav id="navbar">
-        <div class="content">
+        <div class="content text-lg">
             <p>NIPIX TECH</p>
         </div>
-        <ul class="nav-sections">
+        <ul class="nav-sections text-lg">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/Learn">Learn</Link></li>
             <li><Link to="/Events">Events</Link></li>

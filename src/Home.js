@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { heroData, aboutData, featuresData,  footerData } from './data';
 import { useNavigate } from 'react-router-dom';
+import ImageSlider from './ImageSlider';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './Home.css';
@@ -31,7 +32,7 @@ const Home = () => {
             data-aos='fade-up'
             data-aos-delay='700' >
                 <img src={image2} alt="Hero Section"/>
-                <h1 className='font-archivo text-[25px] font-bold text-white'>" THE <span className='text-[#3A75E2]'>FUTURE</span> TECHNOLOGY "</h1>
+                <h1 className='font-archivo m-8 font-bold text-white '> THE <span className='text-[#3A75E2]'>FUTURE</span> TECHNOLOGY </h1>
             </div>
         </div>
       </section>
@@ -128,7 +129,7 @@ const Home = () => {
     // destructure footer data
     const { logo, address, email, phone, list1, list2, socialList } = footerData;
     return (
-      <footer data-aos='fade-up' className='bg-gray-200 '>
+      <footer data-aos='fade-up' className='bg-[#333] bg-opacity-50 rounded-4xl'>
         <div className='container mx-auto'>
           <div className='flex flex-col xl:flex-row text-center xl:text-left gap-y-12 '>
             {/* info */}
@@ -139,24 +140,24 @@ const Home = () => {
             </a>
 
               {/* address */}
-              <div className='max-w-[260px] mb-5 text-primary font-bold'>
+              <div className='ml-12 max-w-[260px] font-light italic '>
                 {address}
               </div>
               {/* email */}
-            <div className='font-light italic'>{email}</div>
+            <div className='ml-12 font-light italic'>{email}</div>
             {/* phone */}
-            <div className='font-light italic'>{phone}</div>
+            <div className='ml-12 mb-5 font-light italic'>{phone}</div>
             </div>
             {/* lists */}
             <div className='flex flex-1 flex-col gap-y-14 xl:flex-row justify-between mt-10'>
               {/* list 1 */}
               <div>
-                <div className='font-extrabold text-primary mb-8'>About</div>
+                <div className='font-bold text-white mb-8'>About</div>
                 <ul className='flex flex-col gap-y-4'>
                   {list1.map((item, index) => {
                     return (
                       <li key={index}>
-                        <a className='text-primary' href={item.href}>
+                        <a className='text-white' href={item.href}>
                           {item.name}
                         </a>
                       </li>
@@ -166,12 +167,12 @@ const Home = () => {
               </div>
               {/* list 2 */}
               <div>
-                <div className='font-extrabold text-primary mb-8'>WebsiteCreated by:</div>
+                <div className='font-bold text-white mb-8'>WebsiteCreated by:</div>
                 <ul className='flex flex-col gap-y-4'>
                   {list2.map((item, index) => {
                     return (
                       <li key={index}>
-                        <a className='text-primary' >
+                        <a className='text-white' >
                           {item.name}
                         </a>
                       </li>
@@ -181,7 +182,7 @@ const Home = () => {
               </div>
               {/* social list */}
               <div>
-                <div className='font-extrabold text-primary mb-8'>
+                <div className='font-bold text-white mb-8'>
                   Contact us:
                 </div>
                 <ul className='flex gap-y-4 gap-x-4 justify-center'>
@@ -215,6 +216,7 @@ const Home = () => {
     <div>
       <Hero />
       <About />
+      <div data-aos='fade-up'><ImageSlider/></div>
       <Features />
       <Footer />
     </div>
