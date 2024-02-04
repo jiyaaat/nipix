@@ -193,7 +193,7 @@ const Home = () => {
                 {list2.map((item, index) => {
                   return (
                     <li key={index}>
-                      <a className='text-primary' href={item.href}>
+                      <a className='text-white' href={item.href}>
                         {item.name}
                       </a>
                     </li>
