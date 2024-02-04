@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './Home.css';
+import TeamSlider from './TeamSlider';
+
 
 const Home = () => {
   const navigate = useNavigate();
@@ -19,7 +21,7 @@ const Home = () => {
   const Hero = () => {
     const { title, subtitle, btnText, image ,image2} = heroData;
     return (
-      <section className='lg:h-[900px] py-12'>
+      <section className='lg:h-[700px] '>
         {/* Header component */}
         <div className="flex justify-center items-center">
             <div className="mr-8 p-8 w-[600px] h-auto"
@@ -109,7 +111,7 @@ const Home = () => {
                     <img src={image} alt='' />
                   </div>
                   <div className='max-w-[220px]'>
-                    <h3 className='h3 mb-4'>{title}</h3>
+                    <h3 className='h3 mb-4 text-xxl'>{title}</h3>
                     <p className='font-light italic mb-4'>{description}</p>
                     
                   </div>
@@ -122,7 +124,26 @@ const Home = () => {
     );
   };
 
-  
+  const Team = () => {
+    return (
+      <section className='relative'>
+        <div className='container-fluid mx-auto'>
+          <div
+            className=' min-h-[600px]'
+            data-aos='fade-up'
+            data-aos-offset='300'
+          >
+            <div className='flex flex-col justify-center px-2 xl:px-0 h-[800px]'>
+              <h2 className='h2 text-white text-center mb-[80px]'>
+                Team Members
+              </h2>
+              <TeamSlider />
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  };
 
   const Footer = () => {
     // destructure footer data
@@ -168,15 +189,15 @@ const Home = () => {
               <div>
                 <div className='font-extrabold text-primary mb-8'>WebsiteCreated by:</div>
                 <ul className='flex flex-col gap-y-4'>
-                  {list2.map((item, index) => {
-                    return (
-                      <li key={index}>
-                        <a className='text-primary' >
-                          {item.name}
-                        </a>
-                      </li>
-                    );
-                  })}
+                {list2.map((item, index) => {
+                  return (
+                    <li key={index}>
+                      <a className='text-primary' href={item.href}>
+                        {item.name}
+                      </a>
+                    </li>
+                  );
+                })}
                 </ul>
               </div>
               {/* social list */}
@@ -216,6 +237,7 @@ const Home = () => {
       <Hero />
       <About />
       <Features />
+      <Team/>
       <Footer />
     </div>
   );

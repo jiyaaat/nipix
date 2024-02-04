@@ -11,6 +11,8 @@ import HeroImage from './img/learningboy.png';
 import Feature1BgImg from './img/feature1_bg.png';
 import Feature2BgImg from './img/feature2_bg.png';
 import nipiximage from './img/herosecn (2).png';
+import teamMember1Img from './img/team-member-sample.jpg';
+import teamMember2Img from './img/team-member-sample-2.jpg';
 
 
 export const heroData = {
@@ -26,11 +28,7 @@ export const aboutData = {
     image: AboutImg,
     title: 'About Us',
     subtitle: `
-      Nipixtech is a forward-thinking technology company committed to solving real-world problems through innovative products and services. With a strong emphasis on cutting-edge technology and a passion for creating positive change, Nipixtech is at the forefront of transforming industries and improving lives.
-  
-      Driven by our belief that technology has the power to revolutionize the way we live and work, we have assembled a talented team of engineers, designers, and industry experts who are dedicated to pushing the boundaries of what is possible. 
-  
-      We constantly explore emerging technologies, stay up-to-date with the latest industry trends, and collaborate with partners to bring transformative solutions to market.
+    Nipixtech innovates solutions for real-world problems, leveraging cutting-edge technology to drive positive change. With a dedicated team of experts, we explore emerging technologies and collaborate to bring transformative solutions to market, revolutionizing industries and improving lives.
     `,
   };
 
@@ -53,15 +51,39 @@ export const featuresData = {
       bgImage: Feature2BgImg,
       title: ' Our Mission',
       description:
-        'Nipix Tech revolutionizes STEM education (grades 1-11) by emphasizing problem-solving skills. Our curriculum spans Physics, Maths, and Chemistry (1-7), advancing to Robotics, IoT, and Coding (8-11) for practical mastery. Through hands-on experiences, we bridge theory to real-world applications, fostering continuous learning',
+        'Nipix Tech transforms STEM education (grades 1-11), integrating problem-solving from foundational concepts to advanced applications, fostering a culture of lifelong learning and innovation in every student.',
       linkText: 'Learn more',
       delay: '700',
     },
   ],
 };
 
-
-
+export const TeamsData = [
+  {
+    image:teamMember1Img ,
+    name: 'Serena',
+    web: 'rena.com',
+    message:
+      'Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.',
+    delay: '300',
+  },
+  {
+    image: teamMember2Img,
+    name: 'Natalia',
+    web: 'nataliya.com',
+    message:
+      'Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.',
+    delay: '600',
+  },
+  {
+    image: teamMember1Img,
+    name: 'Vebin',
+    web: 'vebin.com',
+    message:
+      'Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.',
+    delay: '900',
+  },
+];
 
 export const footerData = {
   logo: LogoV2,
@@ -71,15 +93,15 @@ export const footerData = {
   list1: [
     {
       name: 'Learn',
-      href: '#',
+      href: '/Learn',
     },
     {
       name: 'Events',
-      href: '#',
+      href: '/Events',
     },
     {
       name: 'Signin/signup',
-      href: '#',
+      href: '/login',
     },
     {
       name: 'Feedback',
@@ -89,15 +111,15 @@ export const footerData = {
   list2: [
     {
       name: 'Haaniya',
-      href: '#',
+      href: 'https://www.linkedin.com/in/haaniya-iram-687402252/',
     },
     {
       name: 'Jiya',
-      href: '#',
+      href: 'https://www.linkedin.com/in/jiya-thakur-7ab971251/',
     },
     {
       name: 'Preethi',
-      href: '#',
+      href: 'https://www.linkedin.com/in/r-preethi-09254724b/',
     },
    
   ],

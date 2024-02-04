@@ -13,7 +13,7 @@ function Navbar() {
             <li><Link to="/Learn">Learn</Link></li>
             <li><Link to="/Events">Events</Link></li>
             <li><Link to="/ContactUs">Contact Us</Link></li>
-            <li><Link to="/SignUp">Sign Up</Link></li>
+            <li><Link to="/login">Signup</Link></li>
         </ul>
         </nav>
         

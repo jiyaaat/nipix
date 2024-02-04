@@ -5,16 +5,16 @@ import './Learn.css';
 const cardData = [
   {
     id: 1,
-    backgroundImage: 'url("./physics.jpeg")',
+    backgroundImage: 'url("./physics.jpg")',
     route: 'LearningPath',
   },
   {
     id: 2,
-    backgroundImage: 'url("./maths.jpeg")',
+    backgroundImage: 'url("./maths.jpg")',
   },
   {
     id: 3,
-    backgroundImage: 'url("./chem.jpeg")',
+    backgroundImage: 'url("./chemistry.avif")',
   },
   {
     id: 4,
@@ -22,7 +22,7 @@ const cardData = [
   },
   {
     id: 5,
-    backgroundImage: 'url("https://img.freepik.com/free-vector/children-fixing-robot-together_1308-79403.jpg")'
+    backgroundImage: 'url("./robotics.jpg")'
   },
   {
     id: 6,
