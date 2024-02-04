@@ -11,8 +11,9 @@ import HeroImage from './img/learningboy.png';
 import Feature1BgImg from './img/feature1_bg.png';
 import Feature2BgImg from './img/feature2_bg.png';
 import nipiximage from './img/herosecn (2).png';
-import teamMember1Img from './img/team-member-sample.jpg';
-import teamMember2Img from './img/team-member-sample-2.jpg';
+import teamMember1Img from './img/prashanth.jpg';
+import teamMember2Img from './img/nishok.jpg';
+import teamMember3Img from './img/sriram.jpg';
 
 
 export const heroData = {
@@ -61,24 +62,24 @@ export const featuresData = {
 export const TeamsData = [
   {
     image:teamMember1Img ,
-    name: 'Serena',
-    web: 'rena.com',
+    name: 'Prashant',
+    web: 'CEO',
     message:
       'Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.',
     delay: '300',
   },
   {
     image: teamMember2Img,
-    name: 'Natalia',
-    web: 'nataliya.com',
+    name: 'Nishok',
+    web: 'CMO',
     message:
       'Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.',
     delay: '600',
   },
   {
-    image: teamMember1Img,
-    name: 'Vebin',
-    web: 'vebin.com',
+    image: teamMember3Img,
+    name: 'Sriram',
+    web: 'COO',
     message:
       'Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.',
     delay: '900',

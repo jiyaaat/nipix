@@ -11,6 +11,7 @@ import './Home.css';
 import './App.css';
 import RegisterBox from './RegisterBox';
 import LoginBox from './LoginBox';
+import './App.css';
 
 function App() {
   return (
