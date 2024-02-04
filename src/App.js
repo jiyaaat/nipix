@@ -9,6 +9,7 @@ import Quiz from './Quiz';
 import Events from './Events';
 import RegisterBox from './RegisterBox';
 import LoginBox from './LoginBox';
+import './App.css';
 
 function App() {
   return (
