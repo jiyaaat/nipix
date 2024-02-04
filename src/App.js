@@ -7,11 +7,8 @@ import Contact from './Contact';
 import LearningPath from './LearningPath'; 
 import Quiz from './Quiz';
 import Events from './Events';
-import './Home.css';
-import './App.css';
 import RegisterBox from './RegisterBox';
 import LoginBox from './LoginBox';
-import './App.css';
 
 function App() {
   return (
@@ -23,6 +20,7 @@ function App() {
           <Route path="/Learn" element={<Learn />} />
           <Route path="/Events" element={<Events/>} />
           <Route path="/Learn/LearningPath" element={<LearningPath />} />
+          <Route path="/Contact" element={<Contact />} />
           <Route path="/login" element={<LoginBox/>} />
           <Route path="/register" element={<RegisterBox/>} />
           <Route path="/Learn/LearningPath/Quiz"element={<Quiz/>}/>
