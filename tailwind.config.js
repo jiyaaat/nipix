@@ -2,8 +2,8 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-      primary: 'Archivo Black',
-      secondary: 'sans-serif',
+      primary: ['Montserrat', 'sans-serif'],
+      secondary: ['Archivo', 'sans-serif'],
     },
     container: {
       padding: {
