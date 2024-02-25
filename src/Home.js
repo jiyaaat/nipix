@@ -78,7 +78,7 @@ const Home = () => {
     const { title,  list } = featuresData;
     return (
       <section className='my-[70px] xl:my-[150px]'>
-        <div className='container mx-auto'>
+        <div className='container mx-auto flex-col'>
           {/* text */}
           <div className='text-center'>
             <h2
@@ -128,13 +128,13 @@ const Home = () => {
   const Team = () => {
     return (
       <section className='relative'>
-        <div className='container-fluid mx-auto'>
+        <div className='container-fluid mx-auto '>
           <div
             className=' min-h-[600px]'
             data-aos='fade-up'
             data-aos-offset='300'
           >
-            <div className='flex flex-col justify-center px-2 xl:px-0 h-[800px]'>
+            <div className='flex flex-col justify-center px-2 xl:px-0 h-[600px]'>
               <h2 className='h2 text-white text-center mb-[80px]'>
                 Team Members
               </h2>
