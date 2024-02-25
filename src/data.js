@@ -106,7 +106,7 @@ export const footerData = {
     },
     {
       name: 'Feedback',
-      href: '#',
+      href: 'https://forms.gle/xbLYmoH2PanBvkqK9',
     },
   ],
   list2: [
