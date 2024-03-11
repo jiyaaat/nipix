@@ -1,12 +1,13 @@
 import './Navbar.css'
 import { Link } from 'react-router-dom';
+import './Home.css';
 
 function Navbar() {
     return( 
     <div>
         <nav id="navbar">
         <div class="content text-lg">
-            <p>NIPIX TECH</p>
+            <p text-4xl>NIPIX TECH</p>
         </div>
         <ul class="nav-sections text-lg">
             <li><Link to="/">Home</Link></li>
