@@ -61,11 +61,11 @@ export const featuresData = {
 
 export const TeamsData = [
   {
-    image:teamMember1Img ,
+    image: teamMember1Img,
     name: 'Prashant',
     web: 'CEO',
     message:
-      'Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.',
+      "I'm M. Prashanth, the driving force behind Nipix Tech. As the CEO and founder, my journey in technology began with a passion for coding, leading me to pioneer innovative solutions in robotics. My skills encompass robotics, coding, and effective team leadership.",
     delay: '300',
   },
   {
@@ -73,7 +73,7 @@ export const TeamsData = [
     name: 'Nishok',
     web: 'CMO',
     message:
-      'Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.',
+      "I'm Nishok S, a driven professional with a passion for technology and marketing. As the co-founder of Nipix Tech, I've been instrumental in shaping our company's vision and growth. Serving as the Chief Marketing Officer (CMO), I've harnessed my expertise to drive our brand's success.",
     delay: '600',
   },
   {
@@ -81,10 +81,11 @@ export const TeamsData = [
     name: 'Sriram',
     web: 'COO',
     message:
-      'Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.',
+      "I am an Innovative Creator focusing on deriving, making, and implementing software and hardware-based business solutions that could be effective and revolutionary in the industry and society.",
     delay: '900',
   },
 ];
+
 
 export const footerData = {
   logo: LogoV2,
@@ -106,7 +107,7 @@ export const footerData = {
     },
     {
       name: 'Feedback',
-      href: '#',
+      href: 'https://forms.gle/xbLYmoH2PanBvkqK9',
     },
   ],
   list2: [

@@ -1,23 +1,97 @@
-import './Navbar.css'
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import "./Navbar.css";
+import { CodeIcon, HamburgetMenuClose, HamburgetMenuOpen } from "./Icons";
 
-function Navbar() {
-    return( 
-    <div>
-        <nav id="navbar">
-        <div class="content text-lg">
-            <p>NIPIX TECH</p>
+function NavBar() {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  return (
+    <>
+      <nav className="navbar">
+        <div className="nav-container">
+          <NavLink exact to="/" className="nav-logo">
+            <span>NIPIX TECH</span>
+            {/* <i className="fas fa-code"></i> */}
+            
+          </NavLink>
+
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/Learn"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Learn
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/Events"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Events
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/Contact"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Contact Us
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/login"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Signup
+              </NavLink>
+            </li>
+          </ul>
+          <div className="nav-icon" onClick={handleClick}>
+            {/* <i className={click ? "fas fa-times" : "fas fa-bars"}></i> */}
+
+            {click ? (
+              <span className="icon">
+                <HamburgetMenuClose />{" "}
+              </span>
+            ) : (
+              <span className="icon">
+                
+                <HamburgetMenuOpen />
+              </span>
+            )}
+          </div>
         </div>
-        <ul class="nav-sections text-lg">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/Learn">Learn</Link></li>
-            <li><Link to="/Events">Events</Link></li>
-            <li><Link to="/Contact">Contact Us</Link></li>
-            <li><Link to="/login">Signup</Link></li>
-        </ul>
-        </nav>
-        
-    </div>
-    )
+      </nav>
+    </>
+  );
 }
-export default Navbar;
+
+export default NavBar;

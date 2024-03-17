@@ -10,6 +10,7 @@ import TeamSlider from './TeamSlider';
 
 const Home = () => {
   const navigate = useNavigate();
+
   useEffect(() => {
     // Initialize AOS with your desired configuration
     Aos.init({
@@ -18,24 +19,21 @@ const Home = () => {
       // Add any other AOS customization options here
     });
   }, []);
+
   // Hero component
   const Hero = () => {
-    const { title, subtitle, btnText, image ,image2} = heroData;
+    const { title, subtitle, btnText, image, image2 } = heroData;
     return (
-      <section className='lg:h-[700px] '>
+      <section className='lg:h-[700px]'>
         {/* Header component */}
-        <div className="flex justify-center items-center">
-            <div className="mr-8 p-8 w-[600px] h-auto"
-            data-aos='fade-up'
-            data-aos-delay='700'>
-                <img src={image} alt="Student"  />
-            </div>
-            <div  className="w-1/2 h-auto"
-            data-aos='fade-up'
-            data-aos-delay='700' >
-                <img src={image2} alt="Hero Section"/>
-                <h1 className='font-archivo m-8 font-bold text-white '> THE <span className='text-[#3A75E2]'>FUTURE</span> TECHNOLOGY </h1>
-            </div>
+        <div className="flex flex-col lg:flex-row justify-center items-center">
+          <div className="w-full lg:w-1/2 mx-auto lg:mr-8 p-8 lg:p-0" data-aos='fade-up' data-aos-delay='700'>
+            <img src={image} alt="Student" className="w-full h-auto" />
+          </div>
+          <div className="w-full lg:w-1/2 mx-auto" data-aos='fade-up' data-aos-delay='700'>
+            <img src={image2} alt="Hero Section" className="w-full h-auto" />
+            <h1 className='font-archivo mt-8 lg:mt-0 font-bold text-white text-center lg:text-left'> THE <span className='text-[#3A75E2]'>FUTURE</span> TECHNOLOGY </h1>
+          </div>
         </div>
       </section>
     );
@@ -138,7 +136,10 @@ const Home = () => {
               <h2 className='h2 text-white text-center mb-[80px]'>
                 Team Members
               </h2>
+              <div className="text-sm">
               <TeamSlider />
+              </div>
+              
             </div>
           </div>
         </div>
@@ -151,13 +152,13 @@ const Home = () => {
     const { logo, address, email, phone, list1, list2, socialList } = footerData;
     return (
       <footer data-aos='fade-up' className='bg-[#333] bg-opacity-50 rounded-4xl'>
-        <div className='container mx-auto'>
+        <div className='main-footer container mx-auto h-fit-full w-full'>
           <div className='flex flex-col xl:flex-row text-center xl:text-left gap-y-12 '>
             {/* info */}
             <div className='w-[45%] mx-auto flex flex-col items-center xl:items-start mt-10'>
               {/* logo */}
               <a href='#'>
-              <img style={{ maxWidth: '45%' }} className='mb-[65px]' src={logo} alt='' />
+              <img style={{ maxWidth: '45%' }} className='mb-[65px] sm:ml-14' src={logo} alt='' />
             </a>
 
               {/* address */}

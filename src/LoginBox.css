@@ -163,3 +163,8 @@
 .line{
     margin-top: 10px;
 }  
+@media screen and (max-width: 960px) {
+  .login-box{
+    width: 362px;
+  }
+}
