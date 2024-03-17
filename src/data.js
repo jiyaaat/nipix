@@ -14,6 +14,9 @@ import nipiximage from './img/herosecn (2).png';
 import teamMember1Img from './img/prashanth.jpg';
 import teamMember2Img from './img/nishok.jpg';
 import teamMember3Img from './img/sriram.jpg';
+import teamMember4Img from './img/pavan.png';
+import teamMember5Img from './img/joshua.jpg';
+import teamMember6Img from './img/bharath.jpg';
 
 
 export const heroData = {
@@ -80,6 +83,30 @@ export const TeamsData = [
     image: teamMember3Img,
     name: 'Sriram',
     web: 'COO',
+    message:
+      "I am an Innovative Creator focusing on deriving, making, and implementing software and hardware-based business solutions that could be effective and revolutionary in the industry and society.",
+    delay: '900',
+  },
+  {
+    image: teamMember4Img,
+    name: 'Pavan',
+    web: 'COO',
+    message:
+      "I am an Innovative Creator focusing on deriving, making, and implementing software and hardware-based business solutions that could be effective and revolutionary in the industry and society.",
+    delay: '900',
+  },
+  {
+    image: teamMember5Img,
+    name: 'Immanuel Joshua P',
+    web: 'HR',
+    message:
+      "I am an Innovative Creator focusing on deriving, making, and implementing software and hardware-based business solutions that could be effective and revolutionary in the industry and society.",
+    delay: '900',
+  },
+  {
+    image: teamMember6Img,
+    name: 'Bharath U',
+    web: 'CTO',
     message:
       "I am an Innovative Creator focusing on deriving, making, and implementing software and hardware-based business solutions that could be effective and revolutionary in the industry and society.",
     delay: '900',

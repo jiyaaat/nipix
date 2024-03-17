@@ -32,7 +32,7 @@ const Home = () => {
           </div>
           <div className="w-full lg:w-1/2 mx-auto" data-aos='fade-up' data-aos-delay='700'>
             <img src={image2} alt="Hero Section" className="w-full h-auto" />
-            <h1 className='font-archivo mt-8 lg:mt-0 font-bold text-white text-center lg:text-left'> THE <span className='text-[#3A75E2]'>FUTURE</span> TECHNOLOGY </h1>
+            <h1 className='font-archivo mt-8 lg:mt-0 font-bold text-white text-center lg:text-left'> "THE <span className='text-[#3A75E2]'>FUTURE</span> TECHNOLOGY"</h1>
           </div>
         </div>
       </section>

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+.main-body{
+    font-family: 'Anek Malayalam', sans-serif;
+    /*background-image: url('https://t3.ftcdn.net/jpg/02/53/98/62/360_F_253986268_I3wMfXKQvcjNVcRSLDTMfKtkvbmpAj1J.jpg');*/
+    background-image: url('../img/pic2.jpeg');
+    background-size: cover;
+    color: #11052c;
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+    height: 100vh;
+    border-radius: 40px;
+    width : 70%;
+    margin: 0 auto; 
+    
+  }
+  
+.quiz-container {
+  max-width: 500px;
+  min-width: 250px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 40px;
+  margin-top: 100px;
+  padding: 30px 60px;
+  margin-bottom: 100px;
+  height: fit-content;
+}
+
+
+.quiz-container .active-question-no {
+  font-size: 32px;
+  font-weight: 500;
+  color: #220080;
+}
+
+.quiz-container .total-question {
+  font-size: 16px;
+  font-weight: 500;
+  color: #12166a;
+}
+
+.quiz-container h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.quiz-container ul {
+  margin-top: 20px;
+  margin-left: -40px;
+}
+
+.quiz-container ul li {
+  text-decoration: none;
+  list-style: none;
+  color: #2d264b;
+  font-size: 16px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  padding: 11px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.quiz-container ul .selected-answer {
+  background: #e4e7f4;
+  border: 1px solid #40439c;
+}
+
+.quiz-container button {
+  background: linear-gradient(90.04deg, #40439c 0.03%, #b1b7dc 99.96%);
+  border-radius: 9px;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 10px 42px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.quiz-container button:disabled {
+  background: #e7e8e9;
+  color: #9fa3a9;
+  cursor: not-allowed;
+}
+
+.flex-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.result h1 {
+  font-size: 34px;
+  color: #11052c;
+  margin-bottom: 20px;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+
+.result p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #11052c;
+}
+
+.result p span {
+  color: #40439c;
+  font-size: 22px;
+}
+.timer-over-message{
+    text-align: center;
+    color: #11052c;
+}
+
+.timer{
+  color: #11052c;
+}
