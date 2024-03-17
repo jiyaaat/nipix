@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
@@ -88,6 +89,18 @@ function NavBar() {
               </span>
             )}
           </div>
+=======
+import './Navbar.css'
+import { Link } from 'react-router-dom';
+import './Home.css';
+
+function Navbar() {
+    return( 
+    <div>
+        <nav id="navbar">
+        <div class="content text-lg">
+            <p text-4xl>NIPIX TECH</p>
+>>>>>>> 9a363003229dd0c94ba4b94e4999a016fcd09493
         </div>
       </nav>
     </>
