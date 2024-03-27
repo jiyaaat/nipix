@@ -11,10 +11,12 @@ const cardData = [
   {
     id: 2,
     backgroundImage: 'url("./maths.jpg")',
+    route: 'Maths',
   },
   {
     id: 3,
     backgroundImage: 'url("./chemistry.avif")',
+    route: 'Chem',
   },
   {
     id: 4,
@@ -38,8 +40,8 @@ const Learn = () => {
 
   return (
     <div className='main'>
-      <h1 className='Learn'>💡 Learn With Us 💡</h1>
-      <div className="cards-container">
+      <h1 className='Learn'></h1>
+      <div className="cards-container mt-[50px] mb-[100px]">
         {cardData.map((card, index) => (
           <div
             key={card.id}
@@ -57,7 +59,7 @@ const Learn = () => {
               </div>
               {flippedCard === card.id && (
                 <div className="flip-card-back">
-                  <button className='btn'>Let's start Learning</button>
+                  <button className='btn text-[12px]'>Start</button>
                 </div>
               )}
             </div>

@@ -7,7 +7,7 @@ import AboutImg from './img/logonew.png';
 import Feature1Img from './img/mission.png';
 import Feature2Img from './img/vision.png';
 import LogoV2 from './img/logonew.png';
-import HeroImage from './img/learningboy.png';
+import HeroImage from './img/robo_new.png';
 import Feature1BgImg from './img/feature1_bg.png';
 import Feature2BgImg from './img/feature2_bg.png';
 import nipiximage from './img/herosecn (2).png';

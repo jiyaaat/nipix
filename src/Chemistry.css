@@ -3,13 +3,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
   }
   
   .ai-heading {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #fff;
     text-align: center;
   }
   
@@ -21,19 +19,19 @@
   
   .grade-option {
     padding: 15px 30px;
-    color: black;
     text-align: center;
     border-radius: 25px;
     transition: transform 0.3s, box-shadow 0.3s;
     background-color: #ffffff;
-background-image: linear-gradient(315deg, #ffffff 0%, #91a6ff 74%);
-
+    
+    background-image: url('./img/button_bg.jpg');
+    background-size: cover;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   }
   
   .grade-option:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 15px 20px #5899E2;
+    box-shadow: 0px 15px 20px #3333;
   }
   
   /* Animation */
@@ -44,10 +42,6 @@ background-image: linear-gradient(315deg, #ffffff 0%, #91a6ff 74%);
     100% {
       background-position: 200%;
     }
-  }
-  
-  .shiny {
-    animation: shine 1.5s infinite linear;
   }
   
     

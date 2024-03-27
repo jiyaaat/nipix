@@ -12,7 +12,6 @@ const Card = ({ title, description, completed, onClick, backgroundImage }) => {
     <div className={`card ${completed ? 'completed' : ''}`} onClick={onClick} style={cardStyle}>
       <div className="info">
         <h1>{title}</h1>
-        <button>Read More</button>
       </div>
     </div>
   );
@@ -38,7 +37,7 @@ const LearningPath = () => {
 
   return (
     <div className="max-width-container">
-      <h2 className="learning-path-title"> Learn Physics 💡</h2>
+      <h2 className="learning-path-title text-slate-500 font-bold"> Learn Physics </h2>
       <div className="grid-container">
         {learningSteps.map((step) => (
           <Card
