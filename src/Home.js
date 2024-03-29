@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { heroData, aboutData, featuresData,  footerData } from './data';
 import { useNavigate } from 'react-router-dom';
 import ImageSlider from './ImageSlider';
@@ -6,6 +6,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './Home.css';
 import TeamSlider from './TeamSlider';
+import TypingText from './TypingText';
 
 
 const Home = () => {
@@ -22,19 +23,20 @@ const Home = () => {
 
   // Hero component
   const Hero = () => {
-    const { title, subtitle, btnText, image, image2 } = heroData;
+    const { subtitle, btnText, image, image2 } = heroData;
     return (
       <section className='lg:h-[700px]'>
         {/* Header component */}
         <div className="flex flex-col lg:flex-row justify-center items-center w-">
-        <div className="w-full lg:w-[700px] mx-5 p-8" data-aos='fade-up' data-aos-delay='700'>
+          <div className="w-full lg:w-[700px] mx-5 p-8" data-aos='fade-up' data-aos-delay='700'>
             <img src={image2} alt="Hero Section" className="w-[500px] ml-6 h-auto" />
-            <p className='font-archivo mt-8 ml-4 lg:mt-0 font-bold text-slate-500 text-center lg:text-left w-[700px] text-[40px]'> "THE <span className='text-[#3A75E2]'>FUTURE</span> TECHNOLOGY"</p>
+            <p className='font-archivo mt-8 ml-4 lg:mt-0 font-bold text-slate-500 text-center lg:text-left w-[700px] text-[40px]'>
+            <TypingText text="THE FUTURE TECHNOLOGY" />
+            </p>
           </div>
           <div className="w-full lg:w-[640px] ml-4 lg:mr-6 p-6 lg:p-0" data-aos='fade-up' data-aos-delay='700'>
             <img src={image} alt="Student" className="w-full h-auto" />
           </div>
-          
         </div>
       </section>
     );
@@ -245,6 +247,7 @@ const Home = () => {
       <Features />
       <Team/>
       <Footer />
+      <div className='cursor'></div>
     </div>
   );
 };

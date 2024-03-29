@@ -13,12 +13,14 @@ import './App.css';
 import Mathematics from './Maths';
 import Chem from './Chemistry';
 import AI from './AI';
+import DotCursor from './DotCursor';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Navbar />
+        <DotCursor />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Learn" element={<Learn />} />

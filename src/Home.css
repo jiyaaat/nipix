@@ -16,6 +16,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: 'Montserrat', sans-serif;
+  cursor: none;
 }
 
 
@@ -105,3 +106,18 @@ body {
   .main-footer{
     height: fit-content !important;
   }
+
+
+  .cursor{
+    pointer-events: none;
+    position: fixed;
+    padding: 0.3rem;
+    background-color: #fff;
+    border-radius: 5%;
+    mix-blend-mode: difference;
+    transition: transform 0.3s ease;
+  }
+
+  .hover-this ~ .cursor{
+    transform: translate(-50%, -50%) scale(8);
+  } 

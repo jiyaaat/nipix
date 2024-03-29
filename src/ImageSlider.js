@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import photo1 from './img/workshop/photo1.jpeg';
 import photo2 from './img/workshop/photo2.jpeg';
@@ -11,17 +10,27 @@ import photo7 from './img/workshop/photo7.jpeg';
 
 const ImageSlider = () => {
   const [positionIndexes, setPositionIndexes] = useState([0, 1, 2, 3, 4, 5, 6]);
+  const [intervalId, setIntervalId] = useState(null);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      handleNext();
+    }, 1800); // Change interval time as needed (milliseconds)
+    setIntervalId(id);
+
+    return () => clearInterval(id);
+  }, []);
 
   const handleNext = () => {
-    setPositionIndexes((prevIndexes) => {
-      const updatedIndexes = prevIndexes.map((prevIndex) => (prevIndex + 1) % 7);
+    setPositionIndexes(prevIndexes => {
+      const updatedIndexes = prevIndexes.map(prevIndex => (prevIndex + 1) % 7);
       return updatedIndexes;
     });
   };
 
   const handleBack = () => {
-    setPositionIndexes((prevIndexes) => {
-      const updatedIndexes = prevIndexes.map((prevIndex) => (prevIndex + 6) % 7);
+    setPositionIndexes(prevIndexes => {
+      const updatedIndexes = prevIndexes.map(prevIndex => (prevIndex + 6) % 7);
       return updatedIndexes;
     });
   };
@@ -65,5 +74,3 @@ const ImageSlider = () => {
 };
 
 export default ImageSlider;
-
-
