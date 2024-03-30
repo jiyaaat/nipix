@@ -80,9 +80,9 @@ const Home = () => {
     const { title,  list } = featuresData;
     return (
       <section className='my-[70px] xl:my-[150px]'>
-        <div className='container mx-auto flex-col'>
+        <div className='container mx-auto flex-col text-slate-500' >
           {/* text */}
-          <div className='text-center'>
+          <div className='text-center text-slate-500'>
             <h2
               className='h2 mb-6 xl:mb-12 text-slate-500'
               data-aos='fade-down'
@@ -114,7 +114,7 @@ const Home = () => {
                     <img src={image} alt='' />
                   </div>
                   <div className='max-w-[220px]'>
-                    <h3 className='h3 mb-4 text-xxl'>{title}</h3>
+                    <h3 className='h3 mb-4 text-xxl text-slate-500 font-bold'>{title}</h3>
                     <p className='font-light italic mb-4'>{description}</p>
                     
                   </div>
@@ -130,7 +130,7 @@ const Home = () => {
   const Team = () => {
     return (
       <section className='relative'>
-        <div className='container-fluid mx-auto '>
+        <div className='container-fluid mx-auto mb-60px'>
           <div
             className=' min-h-[600px]'
             data-aos='fade-up'

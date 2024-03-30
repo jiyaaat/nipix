@@ -6,7 +6,7 @@ const cardData = [
   {
     id: 1,
     backgroundImage: 'url("./physics.jpg")',
-    route: 'LearningPath',
+    route: 'Phy',
   },
   {
     id: 2,
@@ -20,13 +20,8 @@ const cardData = [
   },
   {
     id: 4,
-    backgroundImage: 'url("./AI.jpg")',
-    route: 'AI',
-  },
-  {
-    id: 5,
     backgroundImage: 'url("./robotics.jpg")',
-    route: 'Robotics',
+    route: 'AI',
   },
 ];
 

@@ -3,7 +3,7 @@ import './Contact.css';
 
 function Contact() {
     return (
-        <div className="container mx-auto flex justify-center items-center h-screen">
+        <div className="container mx-auto flex justify-center items-center h-screen mb-[100px]">
             <div className="box bg-white rounded-lg shadow-lg p-8 max-w-md">
                 <img src="https://lh3.google.com/u/0/d/1-WTX2Kw4ZlgLnwT9gYyFOxVXowT9eS-t=w1375-h881-iv1" alt="" className="w-full mb-4" />
                 <h2 className="text-2xl font-bold mb-4">Subscribe to our Newsletter</h2>
