@@ -1,0 +1,8 @@
+.timeline-container {
+    height: 500px; /* Adjust the height according to your preference */
+    overflow-y: auto; /* Add vertical scroll if content exceeds container height */
+  }
+  .vertical-timeline-element--work::before {
+    background-color: #d742f5;
+  }
+    

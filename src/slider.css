@@ -1,3 +1,8 @@
+.swiper-container {
+  width: 100%; /* Ensure the container spans the entire width of its parent */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
 .swiper-wrapper {
   min-height: 400px;
 }

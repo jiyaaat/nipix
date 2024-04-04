@@ -4,7 +4,7 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: black;
+    background-color: rgb(174, 168, 168);
     opacity: 0.8;
     position: fixed;
     z-index: 9999;

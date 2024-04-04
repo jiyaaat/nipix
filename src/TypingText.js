@@ -13,6 +13,8 @@ const TypingText = ({ text }) => {
         currentIndex++;
       } else {
         clearInterval(typingInterval);
+        // Reset typing animation by setting currentIndex back to 0
+        currentIndex = 0;
       }
     }, 150); // Adjust typing speed as needed (milliseconds)
 
@@ -42,3 +44,5 @@ const TypingText = ({ text }) => {
 };
 
 export default TypingText;
+
+
