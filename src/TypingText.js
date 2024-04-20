@@ -29,7 +29,7 @@ const TypingText = ({ text }) => {
         style={{
           position: 'absolute',
           top: '50%',
-          left: 'calc(100% + 5px)',
+          left: '100px',
           transform: 'translateY(-50%)',
           width: '20px',
           height: '20px',

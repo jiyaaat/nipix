@@ -30,7 +30,7 @@ const Home = () => {
         <div className="flex flex-col lg:flex-row justify-center items-center w-">
           <div className="w-full lg:w-[700px] mx-5 p-8" data-aos='fade-up' data-aos-delay='700'>
             <img src={image2} alt="Hero Section" className="w-[500px] ml-6 h-auto" />
-            <p className='font-archivo mt-8 ml-4 lg:mt-0 font-bold text-slate-500 text-center lg:text-left w-[700px] text-[40px]'>
+            <p className='font-archivo mt-8 ml-4 sm:ml-2 lg:mt-0 font-bold text-slate-500 text-left lg:text-left lg:w-[700px] lg:text-[40px] sm:text-[20px] sm:text-left sm:w-[300px] '>
             <TypingText text="THE FUTURE TECHNOLOGY" />
             </p>
           </div>
@@ -162,7 +162,7 @@ const Home = () => {
             <div className='w-[45%] mx-auto flex flex-col items-center xl:items-start mt-10'>
               {/* logo */}
               <a href='#'>
-              <img style={{ maxWidth: '45%' }} className='mb-[65px] sm:ml-14 lg:ml-2' src={logo} alt='' />
+              <img style={{ maxWidth: '45%' }} className='mb-[65px] ml-16 sm:ml-16 lg:ml-2' src={logo} alt='' />
             </a>
 
               {/* address */}
