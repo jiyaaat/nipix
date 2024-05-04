@@ -24,7 +24,7 @@ const TeamSlider = () => {
           return (
             <SwiperSlide
               key={index}
-              className='bg-white  rounded-[20px] border border-accent-primary xl:max-w-[645px] max-h-[330px] pt-[60px] px-[35px] xl:px-[70px] pb-[50px] flex items-start gap-x-[30px] shadow-xl'
+              className='bg-white  rounded-[20px] border border-accent-primary xl:max-w-[645px] max-h-[370px] pt-[60px] px-[35px] xl:px-[70px] pb-[50px] flex items-start gap-x-[30px] shadow-xl'
             >
               <img src={image} alt='' className='w-1/4 rounded-full' />
               <div>

@@ -11,7 +11,7 @@
 
 .box {
   background-color: #fff;
-  margin-left: 4rem;
+  margin-left: 1rem;
   border-radius: 20px;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -67,3 +67,24 @@
 .input:focus, .btn:focus {
   outline: 0;
 }
+
+.box {
+  /* Base styles */
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+
+  /* Responsive max-width */
+  max-width: 20rem; /* Default max-width */
+}
+
+/* Medium screens and above */
+@media (min-width: 768px) {
+  .outer_box {
+      max-width: 30rem; /* Medium screen max-width */
+      
+  }
+}
+
+
