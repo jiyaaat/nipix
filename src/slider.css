@@ -1,24 +1,74 @@
+/* slider.css */
 .swiper-container {
-  width: 100%; /* Ensure the container spans the entire width of its parent */
-  overflow: hidden; /* Hide any overflowing content */
+  width: 100%;
+  overflow: hidden;
 }
 
 .swiper-wrapper {
   min-height: 400px;
 }
+
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  width: 50%;
-  margin-left: 400px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
+
 .swiper-pagination-bullet {
   background-color: white;
   opacity: 1;
 }
+
 .swiper-pagination-bullet-active {
   background-color: #6397f0 !important;
 }
-.swiper-slide{
+
+.swiper-slide {
   display: flex;
-  align-items: start;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 90%;
+  margin: auto; /* Center the slides */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    flex-direction: column;
+    padding: 20px;
+    width: 90%; /* Adjust width for smaller screens */
+  }
+  .swiper-pagination-bullets {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .swiper-slide {
+    max-height: auto;
+  }
+  .description {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .swiper-slide {
+    padding: 80px;
+    max-width: 50%; /* Reduce width for larger screens */
+    max-height: 500px; /* Increase height for larger screens */
+  }
 }

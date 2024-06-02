@@ -3,8 +3,6 @@
 
 .main-body{
     font-family: 'Anek Malayalam', sans-serif;
-    /*background-image: url('https://t3.ftcdn.net/jpg/02/53/98/62/360_F_253986268_I3wMfXKQvcjNVcRSLDTMfKtkvbmpAj1J.jpg');*/
-    background-image: url('./img/pic2.jpeg');
     background-size: cover;
     color: #11052c;
     display: flex;

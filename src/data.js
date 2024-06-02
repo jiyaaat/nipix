@@ -68,7 +68,7 @@ export const TeamsData = [
     name: 'Prashant',
     web: 'CEO',
     message:
-      "I'm M. Prashanth, the driving force behind Nipix Tech. As the CEO and founder, my journey in technology began with a passion for coding, leading me to pioneer innovative solutions in robotics. My skills encompass robotics, coding, and effective team leadership.",
+      "I'm M. Prashanth, CEO and founder of Nipix Tech. My journey started with coding, leading to robotics innovation. My skills include robotics, coding, and team leadership.",
     delay: '300',
   },
   {
@@ -76,7 +76,7 @@ export const TeamsData = [
     name: 'Nishok',
     web: 'CMO',
     message:
-      "I'm Nishok S, a driven professional with a passion for technology and marketing. As the co-founder of Nipix Tech, I've been instrumental in shaping our company's vision and growth. Serving as the Chief Marketing Officer (CMO), I've harnessed my expertise to drive our brand's success.",
+      "I'm Nishok S, a professional passionate about technology and marketing. As co-founder of Nipix Tech, I shape our vision. As Chief Marketing Officer (CMO), I drive brand success.",
     delay: '600',
   },
   {
@@ -84,7 +84,7 @@ export const TeamsData = [
     name: 'Sriram',
     web: 'COO',
     message:
-      "I am an Innovative Creator focusing on deriving, making, and implementing software and hardware-based business solutions that could be effective and revolutionary in the industry and society.",
+      "I am an Innovative Creator focussed on creating and implementing Software and Hardware Based Businesses Solution which could make an impact over the Industry and Society.",
     delay: '900',
   },
   {
@@ -92,7 +92,7 @@ export const TeamsData = [
     name: 'Pavan',
     web: 'COO',
     message:
-      "I am an Innovative Creator focusing on deriving, making, and implementing software and hardware-based business solutions that could be effective and revolutionary in the industry and society.",
+    "Armed with C++, blockchain, and robotics expertise, I innovate. Through dedication, I master C++, creating robust solutions. With passion, I make impactful contributions.",
     delay: '900',
   },
   {
@@ -100,7 +100,7 @@ export const TeamsData = [
     name: 'Immanuel Joshua P',
     web: 'HR',
     message:
-      "I am an Innovative Creator focusing on deriving, making, and implementing software and hardware-based business solutions that could be effective and revolutionary in the industry and society.",
+      "I'm Immanuel Joshua P, an HR leader and Python developer at Nipix Tech. In HR, I empower teams and foster growth. As a Python enthusiast, I craft solutions, staying ahead in trends.",
     delay: '900',
   },
   {
@@ -108,7 +108,7 @@ export const TeamsData = [
     name: 'Bharath U',
     web: 'CTO',
     message:
-      "I am an Innovative Creator focusing on deriving, making, and implementing software and hardware-based business solutions that could be effective and revolutionary in the industry and society.",
+    "I'm Bharath U, Nipix Tech's visionary CTO, orchestrating our journey. With proficiency in web, app, DevOps, AI, and robotics, I lead transformation in education.",
     delay: '900',
   },
 ];

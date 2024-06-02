@@ -27,20 +27,21 @@ const Home = () => {
     return (
       <section className='lg:h-[700px]'>
         {/* Header component */}
-        <div className="flex flex-col lg:flex-row justify-center items-center w-">
-          <div className="w-full lg:w-[700px] mx-5 p-8" data-aos='fade-up' data-aos-delay='700'>
-            <img src={image2} alt="Hero Section" className="w-[500px] ml-6 h-auto" />
-            <p className='font-archivo mt-8 ml-4 sm:ml-2 lg:mt-0 font-bold text-slate-500 text-left lg:text-left lg:w-[700px] lg:text-[40px] sm:text-[20px] sm:text-left sm:w-[300px] '>
-            <TypingText text="THE FUTURE TECHNOLOGY" />
+        <div className="flex flex-col lg:flex-row justify-center items-center w-full">
+          <div className="w-full lg:w-[700px] xl:mx-5 sm:mx-6 p-8" data-aos='fade-up' data-aos-delay='700'>
+            <img src={image2} alt="Hero Section" className="w-[500px] xl:ml-6 sm:ml-8 h-auto" />
+            <p className='font-archivo mt-8 lg:ml-8 lg:mt-0 font-bold text-slate-500 text-left lg:text-left lg:w-full lg:text-[40px] sm:text-[40px] sm:text-left sm:w-[400px]'>
+              <TypingText text="THE FUTURE TECHNOLOGY" />
             </p>
           </div>
-          <div className="w-full lg:w-[640px] ml-4 lg:mr-6 p-6 lg:p-0" data-aos='fade-up' data-aos-delay='700'>
+          <div className="w-full lg:w-[640px] ml-4 lg:mr-6 sm:mb-4 p-6 lg:p-0" data-aos='fade-up' data-aos-delay='700'>
             <img src={image} alt="Student" className="w-full h-auto" />
           </div>
         </div>
       </section>
     );
   };
+  
 
   // About component
   const About = () => {
@@ -61,12 +62,21 @@ const Home = () => {
             <div className='flex-1 xl:pr-12'>
               <h1 className="mb-4 font-extrabold text-neutral-600">{title}</h1>
               <p
-                className='max-w-[474px] mx-auto xl:mx-0 font-bold text-slate-500 text-lg'
+                className='max-w-[474px] mx-auto xl:mx-0 font-bold text-slate-500 text-lg mb-12'
                 data-aos='fade-up'
                 data-aos-delay='400'
               >
                 {subtitle}
               </p>
+              <p
+                className='max-w-[474px] italic mx-auto xl:mx-0 font-bold text-slate-500 text-lg mb-12'
+                data-aos='fade-up'
+                data-aos-delay='400'
+              >
+                Experience the power of Learning with us 💡
+              </p>
+              <a className='mt-14 p-4 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded
+              'onClick={() => navigate('/login')}>Sign Up</a>
             </div>
           </div>
         </div>
@@ -141,9 +151,8 @@ const Home = () => {
                 Team Members
               </h2>
               <div className="text-sm">
-              <TeamSlider />
+                <TeamSlider />
               </div>
-              
             </div>
           </div>
         </div>
@@ -157,29 +166,29 @@ const Home = () => {
     return (
       <footer data-aos='fade-up' className='bg-violet-50 bg-opacity-50 rounded-4xl'>
         <div className='main-footer container mx-auto h-fit-full w-full'>
-          <div className='flex flex-col xl:flex-row text-center xl:text-left gap-y-12 '>
+          <div className='flex flex-col xl:flex-row text-center xl:text-left xl:gap-y-12 xl:gap-y-6'>
             {/* info */}
             <div className='w-[45%] mx-auto flex flex-col items-center xl:items-start mt-10'>
               {/* logo */}
               <a href='#'>
-              <img style={{ maxWidth: '45%' }} className='mb-[65px] ml-16 sm:ml-16 lg:ml-2' src={logo} alt='' />
+              <img style={{ maxWidth: '45%' }} className='lg:mb-[65px] sm:mb-[30px] xl:ml-16 sm:ml-16 lg:ml-2' src={logo} alt='' />
             </a>
 
               {/* address */}
-              <div className='ml-12 max-w-[260px] font-light italic '>
+              <div className='lg:ml-12 max-w-[260px] font-light italic '>
                 {address}
               </div>
               {/* email */}
-            <div className='ml-12 font-light italic'>{email}</div>
+            <div className='lg:ml-12 font-light italic'>{email}</div>
             {/* phone */}
-            <div className='ml-12 mb-5 font-light italic'>{phone}</div>
+            <div className='lg:ml-12 xl:mb-5 sm:mb-2 font-light italic'>{phone}</div>
             </div>
             {/* lists */}
-            <div className='flex flex-1 lg:ml-4 flex-col gap-y-14 xl:flex-row justify-between mt-10'>
+            <div className='flex flex-1 lg:ml-4 flex-col xl:gap-y-14 sm:gap-y-8 xl:flex-row justify-between mt-10'>
               {/* list 1 */}
               <div>
-                <div className='font-bold text-slate-500 mb-8'>About</div>
-                <ul className='flex flex-col gap-y-4'>
+                
+                <ul className='flex flex-col xl:gap-y-4 sm:gap-y-2'>
                   {list1.map((item, index) => {
                     return (
                       <li key={index}>
@@ -193,8 +202,8 @@ const Home = () => {
               </div>
               {/* list 2 */}
               <div>
-                <div className='font-bold text-slate-500 mb-8'>WebsiteCreated by:</div>
-                <ul className='flex flex-col gap-y-4'>
+                <div className='font-bold text-slate-500 xl:mb-8 sm:mb-4'>WebsiteCreated by:</div>
+                <ul className='flex flex-col xl:gap-y-4 xl:gap-y-2'>
                 {list2.map((item, index) => {
                   return (
                     <li key={index}>

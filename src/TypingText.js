@@ -1,3 +1,4 @@
+// TypingText.js
 import React, { useEffect, useState } from 'react';
 import './TypingText.css';
 
@@ -22,20 +23,11 @@ const TypingText = ({ text }) => {
   }, [formattedText]);
 
   return (
-    <span style={{ position: 'relative' }}>
-      {displayedText}
+    <span className="typing-container">
+      <span className="typing-text">{displayedText}</span>
       <span
         className="blue-dot"
         style={{
-          position: 'absolute',
-          top: '50%',
-          left: '100px',
-          transform: 'translateY(-50%)',
-          width: '20px',
-          height: '20px',
-          borderRadius: '50%',
-          backgroundColor: '#3A75E2',
-          animation: 'pulse 1s infinite alternate',
           display: displayedText.length < formattedText.length ? 'inline-block' : 'none',
         }}
       />
@@ -44,5 +36,3 @@ const TypingText = ({ text }) => {
 };
 
 export default TypingText;
-
-
