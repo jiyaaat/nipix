@@ -1,3 +1,4 @@
+// TeamSlider.js
 import React from 'react';
 import { TeamsData } from './data';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -8,9 +9,9 @@ import { Pagination } from 'swiper/modules';
 
 const TeamSlider = () => {
   return (
-    <div className="swiper-container"> {/* Add a container div */}
+    <div className="swiper-container">
       <Swiper
-        slidesPerView={'auto'}
+        slidesPerView={1}
         centeredSlides={true}
         spaceBetween={20}
         pagination={{
@@ -20,19 +21,19 @@ const TeamSlider = () => {
         className='mySwiper'
       >
         {TeamsData.map((slide, index) => {
-          const { image, message, name, web, delay } = slide;
+          const { image, message, name, web } = slide;
           return (
             <SwiperSlide
               key={index}
-              className='bg-white  rounded-[20px] border border-accent-primary xl:max-w-[645px] max-h-[370px] pt-[60px] px-[35px] xl:px-[70px] pb-[50px] flex items-start gap-x-[30px] shadow-xl'
+              className='slide-item bg-white rounded-[20px] border border-accent-primary max-h-[370px] p-[20px] flex items-center gap-x-[20px] shadow-xl'
             >
-              <img src={image} alt='' className='w-1/4 rounded-full' />
-              <div>
+              <img src={image} alt={name} className='w-[80px] h-[80px] rounded-full' />
+              <div className="description">
                 <div className='text-lg text-primary font-bold'>{name}</div>
                 <div className='mb-4 font-semibold text-accent-primary'>
                   {web}
                 </div>
-                <p className='max-w-[240px] text-black'>{message}</p>
+                <p className='text-black'>{message}</p>
               </div>
             </SwiperSlide>
           );

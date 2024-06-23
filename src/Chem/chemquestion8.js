@@ -1,0 +1,98 @@
+export const quiz = {
+  topic: 'Chemistry - Grade 8',
+  level: 'Intermediate',
+  totalQuestions: 5,
+  perQuestionScore: 5,
+  questions: [
+    {
+      question: 'What is the atomic number of oxygen?',
+      choices: ['6', '7', '8', '9'],
+      type: 'MCQs',
+      correctAnswer: '8',
+    },
+    {
+      question: 'Which of the following is a metal?',
+      choices: ['Oxygen', 'Carbon', 'Gold', 'Nitrogen'],
+      type: 'MCQs',
+      correctAnswer: 'Gold',
+    },
+    {
+      question: 'What is the chemical formula for sulfuric acid?',
+      choices: ['H2O', 'NaCl', 'H2SO4', 'CH4'],
+      type: 'MCQs',
+      correctAnswer: 'H2SO4',
+    },
+    {
+      question: 'What is the chemical symbol for iron?',
+      choices: ['Fe', 'Ir', 'In', 'I'],
+      type: 'MCQs',
+      correctAnswer: 'Fe',
+    },
+    {
+      question: 'Which of the following is a non-metal?',
+      choices: ['Iron', 'Gold', 'Carbon', 'Silver'],
+      type: 'MCQs',
+      correctAnswer: 'Carbon',
+    },
+    {
+      question: 'What is the chemical formula for ammonia?',
+      choices: ['NH4', 'NH3', 'NH2', 'NH'],
+      type: 'MCQs',
+      correctAnswer: 'NH3',
+    },
+    {
+      question: 'What is the chemical symbol for potassium?',
+      choices: ['Po', 'Pa', 'Pt', 'K'],
+      type: 'MCQs',
+      correctAnswer: 'K',
+    },
+    {
+      question: 'What is the pH of a neutral solution?',
+      choices: ['0', '7', '14', '10'],
+      type: 'MCQs',
+      correctAnswer: '7',
+    },
+    {
+      question: 'What is the chemical formula for sodium chloride?',
+      choices: ['NaCl', 'Na', 'Cl', 'Na2Cl'],
+      type: 'MCQs',
+      correctAnswer: 'NaCl',
+    },
+    {
+      question: 'What is the chemical symbol for copper?',
+      choices: ['Cu', 'Co', 'Cr', 'C'],
+      type: 'MCQs',
+      correctAnswer: 'Cu',
+    },
+    {
+      question: 'Which of the following is a halogen?',
+      choices: ['Fluorine', 'Oxygen', 'Nitrogen', 'Carbon'],
+      type: 'MCQs',
+      correctAnswer: 'Fluorine',
+    },
+    {
+      question: 'What is the chemical formula for carbon dioxide?',
+      choices: ['CO2', 'CO', 'CH4', 'H2O'],
+      type: 'MCQs',
+      correctAnswer: 'CO2',
+    },
+    {
+      question: 'What is the chemical symbol for silver?',
+      choices: ['S', 'Si', 'Ag', 'Au'],
+      type: 'MCQs',
+      correctAnswer: 'Ag',
+    },
+    {
+      question: 'Which of the following is a noble gas?',
+      choices: ['Neon', 'Oxygen', 'Nitrogen', 'Hydrogen'],
+      type: 'MCQs',
+      correctAnswer: 'Neon',
+    },
+    {
+      question: 'What is the chemical formula for water?',
+      choices: ['CO2', 'H2O', 'NaCl', 'CH4'],
+      type: 'MCQs',
+      correctAnswer: 'H2O',
+    },
+  ],
+};

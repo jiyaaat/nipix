@@ -2,6 +2,19 @@
 
 
 
+.main-body{
+    font-family: 'Anek Malayalam', sans-serif;
+    background-size: cover;
+    color: #11052c;
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+    height: 100vh;
+    border-radius: 40px;
+    width : 70%;
+    margin: 0 auto; 
+    
+  }
   
 .quiz-container {
   max-width: 500px;

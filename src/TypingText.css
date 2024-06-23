@@ -1,20 +1,58 @@
-@keyframes pulse {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-@media (max-width: 640px) {
-    .typing-text {
-        font-size: 20px;
-    }
+/* TypingText.css */
+.typing-container {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
-@media (min-width: 640px) {
-    .typing-text {
-        font-size: 40px;
-    }
+.typing-text {
+  font-size: 2rem; /* Default font size */
+}
+
+.blue-dot {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #3A75E2;
+  animation: blink 1s infinite alternate;
+  margin-left: 5px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .typing-text {
+    font-size: 2rem;
+    margin-left: 8%; /* Adjusted font size for tablets */
+  }
+
+  .blue-dot {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .typing-text {
+    font-size: 2rem;
+    margin-left: 8%; /* Adjusted font size for phones */
+  }
+
+  .blue-dot {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
 }
