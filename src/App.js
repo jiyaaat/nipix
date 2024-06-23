@@ -14,6 +14,8 @@ import Chem from './Chemistry';
 import AI from './AI';
 import DotCursor from './DotCursor';
 import Phy from './Phy';
+import Main from './main';
+
 function App() {
   return (
     <Router>
@@ -21,13 +23,13 @@ function App() {
         <Navbar />
         <DotCursor />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Main />} />
           <Route path="/Learn" element={<Learn />} />
-          <Route path="/Events" element={<Events/>} />
+          <Route path="/Events" element={<Events />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="/login" element={<LoginBox/>} />
-          <Route path="/register" element={<RegisterBox/>} />
-          <Route path="/Learn/Phy/grade6"element={<Quiz/>}/>
+          <Route path="/login" element={<LoginBox />} />
+          <Route path="/register" element={<RegisterBox />} />
+          <Route path="/Learn/Phy/grade6" element={<Quiz />} />
           <Route path="/Learn/Maths" element={<Mathematics />} />
           <Route path="/Learn/Chem" element={<Chem />} />
           <Route path="/Learn/Phy" element={<Phy />} />

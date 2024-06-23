@@ -7,6 +7,8 @@ import 'aos/dist/aos.css';
 import './Home.css';
 import TeamSlider from './TeamSlider';
 import TypingText from './TypingText';
+import Spline from '@splinetool/react-spline';
+
 
 
 const Home = () => {
@@ -35,7 +37,9 @@ const Home = () => {
             </p>
           </div>
           <div className="w-full lg:w-[640px] ml-4 lg:mr-6 p-6 lg:p-0" data-aos='fade-up' data-aos-delay='700'>
-            <img src={image} alt="Student" className="w-full h-auto" />
+          <Spline
+          scene="https://prod.spline.design/gAWYf1QmCL6myXao/scene.splinecode" 
+          />
           </div>
         </div>
       </section>

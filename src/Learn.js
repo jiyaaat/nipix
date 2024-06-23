@@ -36,7 +36,7 @@ const Learn = () => {
   return (
     <div className='main'>
       <h1 className='Learn'></h1>
-      <div className="cards-container mt-[50px] mb-[100px]">
+      <div className="cards-container mt-[100px] mb-[100px]">
         {cardData.map((card, index) => (
           <div
             key={card.id}
