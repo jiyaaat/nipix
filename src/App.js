@@ -35,7 +35,7 @@ function App() {
         <Navbar />
         <DotCursor />
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route path="/" element={<Home />} />
           <Route path="/Learn" element={<Learn />} />
           <Route path="/Events" element={<Events />} />
           <Route path="/Contact" element={<Contact />} />

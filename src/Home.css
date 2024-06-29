@@ -6,7 +6,6 @@
 
 body {
   background-size: cover;
-  background-image: url('./img/bg_new_1.jpg');
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -40,6 +39,20 @@ body {
   padding: 20px 0;
   text-align: center;
 }
+.parallax-bg {
+  /* Replace with your background image */
+  background-image: url("./img/new_bg.png");
+
+  /* Set a specific height or min-height for the parallax section */
+  min-height: 700px; /* Adjust based on your design */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 .footer-container {
   display: flex;

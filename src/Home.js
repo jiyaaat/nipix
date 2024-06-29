@@ -21,13 +21,16 @@ const Home = () => {
     });
   }, []);
 
-  // Hero component
+  // Hero component with Parallax effect
   const Hero = () => {
     const { subtitle, btnText, image, image2 } = heroData;
     return (
-      <section className='lg:h-[700px]'>
-        {/* Header component */}
-        <div className="flex flex-col lg:flex-row justify-center items-center w-full">
+      <section className='hero-section'>
+        {/* Parallax background */}
+        <div className="parallax-bg"></div>
+
+        {/* Content */}
+        <div className="flex flex-col lg:flex-row justify-center items-center w-full relative z-10">
           <div className="w-full lg:w-[700px] xl:mx-5 sm:mx-6 p-8" data-aos='fade-up' data-aos-delay='700'>
             <img src={image2} alt="Hero Section" className="w-[500px] xl:ml-6 sm:ml-8 h-auto" />
             <p className='font-archivo mt-8 lg:ml-8 lg:mt-0 font-bold text-slate-500 text-left lg:text-left lg:w-full lg:text-[40px] sm:text-[40px] sm:text-left sm:w-[400px]'>
@@ -45,7 +48,8 @@ const Home = () => {
     );
   };
 
-  // About component
+  // About, Features, Team, and Footer components remain unchanged
+
   const About = () => {
     const { image, subtitle, title } = aboutData;
     return (
@@ -73,7 +77,8 @@ const Home = () => {
     );
   };
 
-  // Features component
+  // Features, Team, and Footer components remain unchanged
+
   const Features = () => {
     const { title, list } = featuresData;
     return (
@@ -186,6 +191,9 @@ const Home = () => {
   // Render Home component
   return (
     <div>
+      {/* Parallax background */}
+      <div className="parallax-bg"></div>
+      
       <Hero />
       <About />
       <div data-aos='fade-up'><ImageSlider/></div>
