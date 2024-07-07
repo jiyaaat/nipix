@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Learn from './Learn';
 import Navbar from './Navbar';
-import Home from './Home';
+//import Home from './Home';
+import Home from './home_new'
 import Contact from './Contact';
 import Quiz from './Quiz';
 import Events from './Events';

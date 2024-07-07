@@ -1,54 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
     font-family: 'Montserrat', sans-serif;
-    
+    background-color: #f0f0f0; /* Optional: a light background to contrast with the dark header */
+    color: #333;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-html{
-    scroll-behavior: smooth;
+body {
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .App {
-  text-align: center;
+    text-align: center;
+    max-width: 100vw; /* Ensure the app container does not exceed the viewport width */
+    overflow-x: hidden; /* Prevent horizontal scrolling within the app container */
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for any transform changes */
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding: 20px;
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for background color changes */
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out; /* Smooth transition for color changes */
+}
+
+.App-link:hover {
+    color: #21a1f1; /* Darker shade of blue for hover effect */
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Adding some smoothness to buttons if any */
+button {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #61dafb; /* Same as .App-link color */
+    transform: scale(1.05);
 }
