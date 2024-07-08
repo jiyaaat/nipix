@@ -1,5 +1,3 @@
-// Home.js
-
 import React, { useRef, useEffect, useState } from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { animated, useSpring } from '@react-spring/web';
@@ -7,6 +5,7 @@ import TypingText from './TypingText';
 import { useNavigate } from 'react-router-dom';
 import lottie from 'lottie-web';
 import droneAnimation from './Drone/drone_animation.json'; // Adjust path as needed
+import Services from './Services.js';
 import './home_new.css'; // Ensure your styles are correctly imported
 import { aboutData } from './data'; // Import your data as needed
 import TeamSlider from './TeamSlider'; // Import TeamSlider component
@@ -15,7 +14,7 @@ const Home = () => {
   const navigate = useNavigate();
   const fadeIn = useSpring({ from: { opacity: 0 }, to: { opacity: 1 }, config: { duration: 1000 } });
   const sectionsRef = useRef([]);
-  const sectionCount = 7; // Adjust the section count as needed
+  const sectionCount = 4; // Adjust the section count as needed
   const [currentSection, setCurrentSection] = useState(0);
 
   // Function to handle smooth scrolling between sections
@@ -113,33 +112,21 @@ const Home = () => {
 
           {/* Our Services Section */}
           <section ref={(el) => (sectionsRef.current[1] = el)} className="h-screen py-20 px-6 flex items-center justify-center bg-gray-200">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-5xl font-semibold mb-8 text-gray-900">
-                Our Services
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <ServiceBox title="Workshops & Seminars" description="Engaging workshops tailored to your needs." />
-                <ServiceBox title="Robotics and AI Lab setup" description="Setting up advanced Robotics and AI labs." />
-                <ServiceBox title="Project Development" description="Custom project development solutions." />
-              </div>
+            <div className="max-w-7xl mx-auto text-left">
+              <Services />
             </div>
           </section>
 
           {/* Our Team Section with TeamSlider Component */}
-          <section ref={(el) => (sectionsRef.current[2] = el)} className="h-screen py-20 px-6 flex items-center justify-center bg-gray-300">
+          <section ref={(el) => (sectionsRef.current[2] = el)} className="h-screen py-20 px-6 flex items-center justify-center bg-white">
             <TeamSlider />
           </section>
+          
+          
         </main>
       </div>
     </ParallaxProvider>
   );
 };
-
-const ServiceBox = ({ title, description }) => (
-  <div className="bg-white rounded-lg p-6 shadow-md">
-    <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>
-    <p className="text-gray-600">{description}</p>
-  </div>
-);
 
 export default Home;

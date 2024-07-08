@@ -1,4 +1,3 @@
-/* slider.css */
 .swiper-container {
   width: 100%;
   overflow: hidden;
@@ -10,9 +9,7 @@
 
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+  display: none; /* Hide pagination bullets */
 }
 
 .swiper-pagination-bullet {
@@ -30,7 +27,8 @@
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  width: 90%;
+  width: auto;
+  max-width: 90%; /* Adjust this value to ensure slides don't overflow */
   margin: auto; /* Center the slides */
 }
 
@@ -50,14 +48,6 @@
     flex-direction: column;
     padding: 20px;
     width: 90%; /* Adjust width for smaller screens */
-  }
-  .swiper-pagination-bullets {
-    margin-left: 0;
-    width: 100%;
-    justify-content: center;
-  }
-  .swiper-slide {
-    max-height: auto;
   }
   .description {
     padding-left: 0;
