@@ -9,6 +9,9 @@ import Services from './Services.js';
 import './home_new.css'; // Ensure your styles are correctly imported
 import { aboutData } from './data'; // Import your data as needed
 import TeamSlider from './TeamSlider'; // Import TeamSlider component
+import Footer from './Footer.js';
+import img_new from './img/workshop/photo3.jpeg';
+
 
 const Home = () => {
   const navigate = useNavigate();
@@ -118,11 +121,36 @@ const Home = () => {
           </section>
 
           {/* Our Team Section with TeamSlider Component */}
-          <section ref={(el) => (sectionsRef.current[2] = el)} className="h-screen py-20 px-6 flex items-center justify-center bg-white">
+          <section ref={(el) => (sectionsRef.current[2] = el)} className="h-screen py-20 px-6 flex items-center justify-center bg-gray-100">
             <TeamSlider />
           </section>
-          
-          
+
+          {/* Wave SVG */}
+          <div className="relative">
+            <svg className="absolute bottom-0" width="100%" height="100%" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" overflow="auto" shape-rendering="auto" fill="#ffffff">
+              <defs>
+                <path id="wavepath" d="M 0 2000 0 500 Q 62.5 315 125 500 t 125 0 125 0 125 0 125 0 125 0 125 0 125 0 125 0 125 0  v1000 z" /> 
+              </defs>
+              <g>
+                <use href="#wavepath" y="125" fill="#0c2531"></use>
+              </g>
+            </svg>
+
+            {/* Contact Section */}
+            <div className="relative flex justify-center items-center h-64 z-10">
+                <img src={img_new} alt="Background" className="absolute inset-0 mx-auto w-[50%] h-full object-cover" />
+                <div className="relative text-center">
+                  <h2 className="text-3xl font-bold text-white mb-4">Get in touch with us</h2>
+                  <button className="bg-blue-600 text-white py-2 px-4 rounded">Let's Connect</button>
+                </div>
+              </div>
+              </div>
+
+
+          {/* Footer Section */}
+          <section ref={(el) => (sectionsRef.current[3] = el)} className="py-8 bg-[#0c2531]">
+            <Footer />
+          </section>
         </main>
       </div>
     </ParallaxProvider>
@@ -130,3 +158,4 @@ const Home = () => {
 };
 
 export default Home;
+

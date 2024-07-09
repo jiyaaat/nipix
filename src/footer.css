@@ -1,0 +1,14 @@
+.wave-container {
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+  }
+  
+  .wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    transform: scaleY(-1);
+  }
+  
