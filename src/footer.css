@@ -11,4 +11,9 @@
     height: 100px;
     transform: scaleY(-1);
   }
-  
+  .footer-sec{
+    margin-left: 400px;
+  }
+  .footer-sec2{
+    margin-top: 200px;
+  }

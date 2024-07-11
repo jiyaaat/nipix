@@ -10,7 +10,7 @@ const TeamSlider = () => {
   return (
     <div className="swiper-container">
       <Swiper
-        slidesPerView={1}
+        slidesPerView={3} // Adjust based on how many slides you want to show at once
         centeredSlides={true}
         spaceBetween={50}
         loop={true}

@@ -122,8 +122,10 @@ const Home = () => {
 
           {/* Our Team Section with TeamSlider Component */}
           <section ref={(el) => (sectionsRef.current[2] = el)} className="h-screen py-20 px-6 flex items-center justify-center bg-gray-100">
-            <TeamSlider />
-          </section>
+        <div className="w-full max-w-screen-xl">
+          <TeamSlider />
+        </div>
+      </section>
 
           {/* Wave SVG */}
           <div className="relative">
@@ -148,7 +150,7 @@ const Home = () => {
 
 
           {/* Footer Section */}
-          <section ref={(el) => (sectionsRef.current[3] = el)} className="py-8 bg-[#0c2531]">
+          <section ref={(el) => (sectionsRef.current[3] = el)} className="py-8 bg-[#0c2531] "style={{ height: '110vh'}}>
             <Footer />
           </section>
         </main>

@@ -30,6 +30,7 @@
   width: auto;
   max-width: 90%; /* Adjust this value to ensure slides don't overflow */
   margin: auto; /* Center the slides */
+  height: 380px;
 }
 
 .text-center {
