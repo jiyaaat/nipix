@@ -28,8 +28,7 @@
   padding: 20px;
   box-sizing: border-box;
   width: auto;
-  max-width: 90%; /* Adjust this value to ensure slides don't overflow */
-  margin: auto; /* Center the slides */
+  max-width: 90%;
   height: 380px;
 }
 
@@ -41,7 +40,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 20px;
+
 }
 
 @media (max-width: 768px) {

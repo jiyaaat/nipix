@@ -12,7 +12,6 @@ import TeamSlider from './TeamSlider'; // Import TeamSlider component
 import Footer from './Footer.js';
 import img_new from './img/workshop/photo3.jpeg';
 
-
 const Home = () => {
   const navigate = useNavigate();
   const fadeIn = useSpring({ from: { opacity: 0 }, to: { opacity: 1 }, config: { duration: 1000 } });
@@ -122,16 +121,17 @@ const Home = () => {
 
           {/* Our Team Section with TeamSlider Component */}
           <section ref={(el) => (sectionsRef.current[2] = el)} className="h-screen py-20 px-6 flex items-center justify-center bg-gray-100">
-        <div className="w-full max-w-screen-xl">
-          <TeamSlider />
-        </div>
-      </section>
+            <div className="w-full max-w-screen-xl">
+              <h1 className="text-4xl font-extrabold text-neutral-600 mb-8">Our Team</h1>
+              <TeamSlider />
+            </div>
+          </section>
 
           {/* Wave SVG */}
           <div className="relative">
             <svg className="absolute bottom-0" width="100%" height="100%" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" overflow="auto" shape-rendering="auto" fill="#ffffff">
               <defs>
-                <path id="wavepath" d="M 0 2000 0 500 Q 62.5 315 125 500 t 125 0 125 0 125 0 125 0 125 0 125 0 125 0 125 0 125 0  v1000 z" /> 
+                <path id="wavepath" d="M 0 2000 0 500 Q 62.5 315 125 500 t 125 0 125 0 125 0 125 0 125 0 125 0 125 0  v1000 z" /> 
               </defs>
               <g>
                 <use href="#wavepath" y="125" fill="#0c2531"></use>
@@ -150,7 +150,7 @@ const Home = () => {
 
 
           {/* Footer Section */}
-          <section ref={(el) => (sectionsRef.current[3] = el)} className="py-8 bg-[#0c2531] "style={{ height: '110vh'}}>
+          <section ref={(el) => (sectionsRef.current[3] = el)} className="bg-[#0c2531] " style={{ height: '110vh'}}>
             <Footer />
           </section>
         </main>
@@ -160,4 +160,3 @@ const Home = () => {
 };
 
 export default Home;
-

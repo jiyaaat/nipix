@@ -26,7 +26,7 @@ const servicesData = [
 const Services = () => {
   return (
     <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-      <h1 className="text-3xl font-extrabold text-neutral-600 mb-14 text-left">Our Services</h1>
+      <h1 className="text-3xl font-extrabold text-neutral-600 mb-14 text-center">Our Services</h1>
       <div className="flex flex-wrap -mx-4">
         {servicesData.map((service, index) => (
           <div key={index} className="w-full md:w-1/3 px-4 mb-8">
