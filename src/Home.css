@@ -4,18 +4,7 @@
 @tailwind utilities;
 
 
-body {
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: 'Montserrat', sans-serif;
-  cursor: none;
-}
+
 
 /* Other custom styles */
 .cursor {

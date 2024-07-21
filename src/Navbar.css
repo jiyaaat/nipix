@@ -36,7 +36,7 @@
 }
 
 .nav-links {
-  color: #fff;
+  color: black;
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
@@ -50,7 +50,8 @@
 
 .nav-item:hover .nav-links {
   color: #004aad;
-  border-bottom: 3px solid #004aad;
+  border: 3px solid #004aad;
+  
 }
 
 .nav-icon {
@@ -89,11 +90,12 @@
   }
 
   .nav-icon {
-      display: block;
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translate(-100%, -50%);
-      cursor: pointer;
+    width: 45px;
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 30px;
+    transform: translate(-100%, -50%);
+    cursor: pointer;
   }
 }

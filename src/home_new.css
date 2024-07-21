@@ -1,65 +1,192 @@
 /* Global styles */
 html, body {
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    font-family: 'Inter', sans-serif; /* Replace with your preferred font */
-    background-color: #f0f0f0; /* Optional: Set a background color for the body */
-    color: #333; /* Set text color */
-    line-height: 1.6; /* Set line height */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    overscroll-behavior: none; /* Prevent scroll bounce effect on mobile */
-    margin: 0; /* Ensure no default margins */
-    padding: 0; /* Ensure no default padding */
-  }
-  
-  .App {
-    max-width: 100vw; /* Ensure the app container does not exceed viewport width */
-    overflow-x: hidden; /* Prevent horizontal scrolling within the app container */
-    box-sizing: border-box; /* Include padding in max-width calculation */
-    margin: 0 auto; /* Center align content */
-  }
-  
-  /* Custom styles for home sections */
-  .section {
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Smooth transition for opacity and transform */
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0; /* Initially hidden */
-  }
-  
-  .section.active {
-    opacity: 1; /* Active section visible */
-    transform: translateX(0%); /* Active section positioned in view */
-  }
-  
-  .section.next {
-    opacity: 1; /* Next section visible */
-    transform: translateX(100%); /* Next section transitioned in */
-  }
-  
-  .section.prev {
-    opacity: 1; /* Previous section visible */
-    transform: translateX(-100%); /* Previous section transitioned in */
-  }
-  
-  /* Example specific section styles */
-  .section1 {
-    background-color: #ffffff; /* Example background color for section 1 */
-  }
-  
-  .section2 {
-    background-color: #f0f0f0; /* Example background color for section 2 */
-  }
-  
-  .section3 {
-    background-color: #cccccc; /* Example background color for section 3 */
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* Custom styles for home sections */
+.section {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.section.active {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.section.next {
+  opacity: 1;
+  transform: translateX(100%);
+}
+
+.section.prev {
+  opacity: 1;
+  transform: translateX(-100%);
+}
+
+/* Responsive styling */
+header {
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+header .relative {
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header a {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 3rem;
   }
 
+  header a {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  header h1 {
+    font-size: 4rem;
+  }
+
+  header a {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+  }
+}
+
+/* Services section */
+.services-section {
+  padding: 40px 20px;
+}
+
+.services-section .max-w-7xl {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .services-section {
+    padding: 60px 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-section {
+    padding: 80px 40px;
+  }
+}
+
+/* Our Team section */
+.our-team-section {
+  padding: 40px 20px;
+}
+
+@media (min-width: 768px) {
+  .our-team-section {
+    padding: 60px 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .our-team-section {
+    padding: 80px 40px;
+  }
+}
+
+/* Contact section */
+.contact-section {
+  position: relative;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-section img {
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.contact-section .relative {
+  z-index: 10;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-section button {
+  padding: 0.5rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .contact-section h2 {
+    font-size: 2.5rem;
+  }
   
-  
+
+  .contact-section button {
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-section h2 {
+    font-size: 3rem;
+  }
+
+  .contact-section button {
+    padding: 1rem 2rem;
+  }
+}
+@media(max-width:768px) {
+  .contact-section img{
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .typing-text {
+      font-size: 1rem;
+      margin-left: 0%;
+  }
+}

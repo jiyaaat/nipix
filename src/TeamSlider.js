@@ -26,10 +26,9 @@ const TeamSlider = () => {
           return (
             <SwiperSlide
               key={index}
-              className="slide-item bg-white rounded-[20px] border border-accent-primary max-h-[370px] p-[20px] flex items-center gap-x-[15px] shadow-xl"
+              className="slide-item bg-white rounded-[20px] border border-accent-primary p-[20px] flex items-center gap-x-[15px] shadow-xl"
             >
-                <img src={image} alt={name} className="w-[30%] h-[30%] rounded-[5%]" />
-              
+              <img src={image} alt={name} className="slide-image" />
               <div className="description">
                 <div className="text-lg text-primary font-bold text-center">{name}</div>
                 <div className="mb-4 font-semibold text-accent-primary text-center">{web}</div>

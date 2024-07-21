@@ -6,18 +6,7 @@
 @tailwind utilities;
 
 /* Global Styles */
-body {
-  background-size: cover;
-  background-image: url('./img/bg_new_1.jpg');
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: 'Montserrat', sans-serif;
-  cursor: none;
-}
+
 
 /* Custom Cursor Styles */
 .cursor {

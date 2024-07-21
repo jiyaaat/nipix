@@ -40,15 +40,28 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
 
+.slide-image {
+  width: 30%;
+  height: 30%;
+  border-radius: 5%;
 }
 
 @media (max-width: 768px) {
   .swiper-slide {
-    flex-direction: column;
+    flex-direction: column !important;
     padding: 20px;
-    width: 90%; /* Adjust width for smaller screens */
+    width: 120px !important; /* Adjust width for smaller screens */
+    height: auto; /* Adjust height for smaller screens */
   }
+
+  .slide-image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
   .description {
     padding-left: 0;
     text-align: center;
@@ -62,3 +75,4 @@
     max-height: 500px; /* Increase height for larger screens */
   }
 }
+
