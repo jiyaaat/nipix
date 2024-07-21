@@ -83,34 +83,36 @@ const Home = () => {
         </header>
 
         <main className="bg-gray-100">
-          <section ref={(el) => (sectionsRef.current[0] = el)} className="h-screen py-20 px-6 flex items-center justify-center bg-white">
-            <div className="max-w-4xl mx-auto text-center">
-              <div className='container mx-auto'>
-                <div className='bg-transparent rounded-[50px] min-h-[560px] flex flex-col text-center xl:flex-row xl:items-center xl:text-left text-slate-500 xl:gap-x-[60px] xl:pb-0'>
-                  <div className='flex-1' data-aos='zoom-in-left'>
-                    <img src={aboutData.image} alt='' />
-                  </div>
-                  <div className='flex-1 xl:pr-12'>
-                    <h1 className="mb-4 font-extrabold text-neutral-600">{aboutData.title}</h1>
-                    <p
-                      className='max-w-[474px] mx-auto xl:mx-0 font-bold text-slate-500 text-lg mb-12'
-                      data-aos='fade-up'
-                      data-aos-delay='400'
-                    >
-                      {aboutData.subtitle}
-                    </p>
-                    <p
-                      className='max-w-[474px] italic mx-auto xl:mx-0 font-bold text-slate-500 text-lg mb-12'
-                      data-aos='fade-up'
-                      data-aos-delay='400'
-                    >
-                      Experience the power of Learning with us 💡
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+        <section ref={(el) => (sectionsRef.current[0] = el)} className="h-screen py-20 px-6 flex items-center justify-center bg-white">
+  <div className="max-w-4xl mx-auto text-center">
+    <div className="container mx-auto">
+      <div className="bg-transparent rounded-[50px] flex flex-col text-center xl:flex-row xl:items-center xl:text-left text-slate-500 xl:gap-x-[60px] xl:pb-0">
+        <div className="flex-1 flex justify-center items-center" data-aos="zoom-in-left">
+          <img className="h-56 sm:h-1/4 md:h-1/2 lg:h-full xl:h-full" src={aboutData.image} alt="" />
+        </div>
+        <div className="flex-1 xl:pr-12">
+          <h1 className="mb-4 font-extrabold text-neutral-600">{aboutData.title}</h1>
+          <p
+            className="max-w-[474px] mx-auto xl:mx-0 font-bold text-slate-500 text-lg mb-12"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            {aboutData.subtitle}
+          </p>
+          <p
+            className="max-w-[474px] italic mx-auto xl:mx-0 font-bold text-slate-500 text-lg mb-12"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            Experience the power of Learning with us 💡
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
           {/* Our Services Section */}
           <section ref={(el) => (sectionsRef.current[1] = el)} className="services-section py-20 px-6 flex items-center justify-center bg-gray-200">

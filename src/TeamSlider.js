@@ -32,7 +32,7 @@ const TeamSlider = () => {
               <div className="description">
                 <div className="text-lg text-primary font-bold text-center">{name}</div>
                 <div className="mb-4 font-semibold text-accent-primary text-center">{web}</div>
-                <p className="text-black text-left">{message}</p>
+                <p className="text-black text-left hide-on-small">{message}</p>
               </div>
             </SwiperSlide>
           );
