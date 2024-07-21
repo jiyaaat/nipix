@@ -7,10 +7,10 @@
     width: 400px;
     padding: 40px;
     transform: translate(-50%, -50%);
-    background: rgba(0,0,0,.7);
-    border: 2px solid #03e9f4;
+    background: #196f97;
+    border: 2px solid #196f97;
     box-sizing: border-box;
-    box-shadow: 0 0 5px #03e9f4, 0 0 2px #03e9f4, 0 0 5px #03e9f4, 0 0 50px #03e9f4;
+    box-shadow: 0 0 5px #196f97, 0 0 2px #196f97, 0 0 5px #03e9f4, 0 0 50px #03e9f4;
     border-radius: 10px;
   }
   

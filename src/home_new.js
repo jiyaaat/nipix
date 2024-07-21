@@ -88,7 +88,7 @@ const Home = () => {
     <div className="container mx-auto">
       <div className="bg-transparent rounded-[50px] flex flex-col text-center xl:flex-row xl:items-center xl:text-left text-slate-500 xl:gap-x-[60px] xl:pb-0">
         <div className="flex-1 flex justify-center items-center" data-aos="zoom-in-left">
-          <img className="h-56 sm:h-1/4 md:h-1/2 lg:h-full xl:h-full" src={aboutData.image} alt="" />
+          <img className="h-56 sm:h-1/4 md:h-1/4 lg:h-full xl:h-full" src={aboutData.image} alt="" />
         </div>
         <div className="flex-1 xl:pr-12">
           <h1 className="mb-4 font-extrabold text-neutral-600">{aboutData.title}</h1>
