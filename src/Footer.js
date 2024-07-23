@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="relative text-white"> {/* Reduced padding */}
       {/* Footer Section */}
-      <div className="container mx-auto px-4 py-0 flex justify-between">
+      <div className="container mx-auto px-4 py-0 md:flex justify-between">
         {/* Left Section */}
         <div className="text-center md:text-left mb-2 md:mb-0"> {/* Reduced margin */}
           <h1 className="text-4xl font-bold text-blue-500">NIPIX TECH</h1>

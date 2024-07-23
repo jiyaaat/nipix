@@ -14,7 +14,7 @@ import nipiximage from './img/herosecn (2).png';
 import teamMember1Img from './img/prashanth.jpg';
 import teamMember2Img from './img/nishok.jpg';
 import teamMember3Img from './img/sriram.jpg';
-import teamMember4Img from './img/pavan.png';
+
 import teamMember5Img from './img/joshua.jpg';
 import teamMember6Img from './img/bharath.jpg';
 
@@ -87,14 +87,7 @@ export const TeamsData = [
       "I am an Innovative Creator focussed on creating and implementing Software and Hardware Based Businesses Solution which could make an impact over the Industry and Society.",
     delay: '900',
   },
-  {
-    image: teamMember4Img,
-    name: 'Pavan',
-    web: 'COO',
-    message:
-    "Armed with C++, blockchain, and robotics expertise, I innovate. Through dedication, I master C++, creating robust solutions. With passion, I make impactful contributions.",
-    delay: '900',
-  },
+  ,
   {
     image: teamMember5Img,
     name: 'Immanuel Joshua P',
