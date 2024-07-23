@@ -3,46 +3,45 @@ import '@fortawesome/fontawesome-free/css/all.min.css';  // Import Font Awesome 
 
 const Footer = () => {
   return (
-    <div className="relative text-white"> {/* Reduced padding */}
+    <div className="relative text-white bg-[#0c2531]">
       {/* Footer Section */}
-      <div className="container mx-auto px-4 py-0 md:flex justify-between">
+      <div className="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
         {/* Left Section */}
-        <div className="text-center md:text-left mb-2 md:mb-0"> {/* Reduced margin */}
-          <h1 className="text-4xl font-bold text-blue-500">NIPIX TECH</h1>
+        <div className="text-center md:text-left ">
+          <h1 className="text-2xl md:text-4xl font-bold text-blue-500">NIPIX TECH</h1>
           <p>Chennai 600005</p>
           <p>nipixtech23@gmail.com</p>
           <p>+91 93610 30360</p>
         </div>
 
         {/* Right Section */}
-        <div className="flex flex-col items-end">
+        <div className="flex flex-col items-center md:items-end space-y-2 md:space-y-0 md:space-x-6 mt-2 md:mt-0">
           {/* Navigation Links */}
-          <div className="flex space-x-6 mb-2"> {/* Reduced space between items */}
-            <a href="#" className="text-white hover:text-blue-400">Home</a>
-            <a href="#" className="text-white hover:text-blue-400">Learn</a>
-            <a href="#" className="text-white hover:text-blue-400">Events</a>
-            <a href="#" className="text-white hover:text-blue-400">Sign Up</a>
+          <div className="flex flex-col md:flex-row space-y-2 md:space-y-2 md:space-x-6">
+            <a href="#" className="text-white hover:text-blue-400 text-sm md:text-base">Home</a>
+            <a href="#" className="text-white hover:text-blue-400 text-sm md:text-base">Learn</a>
+            <a href="#" className="text-white hover:text-blue-400 text-sm md:text-base">Events</a>
+            <a href="#" className="text-white hover:text-blue-400 text-sm md:text-base">Sign Up</a>
           </div>
 
           {/* Social Media Icons */}
-          <div className="flex space-x-6"> {/* Reduced space between icons */}
-            <a href="#" className="text-white hover:text-blue-400 text-xl"><i className="fab fa-facebook-f"></i></a>
-            <a href="#" className="text-white hover:text-blue-400 text-xl"><i className="fab fa-twitter"></i></a>
-            <a href="#" className="text-white hover:text-blue-400 text-xl"><i className="fab fa-instagram"></i></a>
-            <a href="#" className="text-white hover:text-blue-400 text-xl"><i className="fab fa-linkedin-in"></i></a>
+          <div className="flex space-x-4">
+            <a href="#" className="text-white hover:text-blue-400 text-lg md:text-xl"><i className="fab fa-facebook-f"></i></a>
+            <a href="#" className="text-white hover:text-blue-400 text-lg md:text-xl"><i className="fab fa-twitter"></i></a>
+            <a href="#" className="text-white hover:text-blue-400 text-lg md:text-xl"><i className="fab fa-instagram"></i></a>
+            <a href="#" className="text-white hover:text-blue-400 text-lg md:text-xl"><i className="fab fa-linkedin-in"></i></a>
           </div>
         </div>
       </div>
 
       {/* Horizontal Line */}
-      
-        
-      {/* Copyright Text */}
-      <div className="text-center " style={{ marginTop: '-140px', marginLeft: '750px' }}> {/* Reduced margin */}
-        <p className='text-sm'>© 2024 Preethi R, Jiya Thakur, Haniya Iram. All rights reserved.</p>
+      <div className="text-center px-4 py-4">
+        <hr className="border-t border-gray-400" />
       </div>
-      <div className='mx-auto px-6 mb-6'>
-        <hr className="border-t border-gray-400 "/>
+
+      {/* Copyright Text */}
+      <div className="text-center py-2">
+        <p className='text-xs md:text-sm'>© 2024 Preethi R, Jiya Thakur, Haniya Iram. All rights reserved.</p>
       </div>
     </div>
   );
