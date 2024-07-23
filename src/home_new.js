@@ -68,10 +68,8 @@ const Home = () => {
   return (
     <ParallaxProvider>
       <div className="text-center relative">
-        <header id="header" className="bg-blue-200 min-h-screen flex flex-col items-center justify-center text-white relative" onClick={scrollToHeader}>
-          <div id="drone-animation" className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 opacity-[30%]">
-            {/* Animation will be loaded here */}
-          </div>
+        <header id="header" className="header1 min-h-screen flex flex-col items-center justify-center text-white relative" onClick={scrollToHeader}>
+          
           <div className="relative z-10">
             <animated.h1 style={fadeIn} className="text-4xl font-black mb-8">
               <span>NIPIX TECH</span><br /><br />

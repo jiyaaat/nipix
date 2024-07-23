@@ -12,6 +12,7 @@ html, body {
   overscroll-behavior: none;
   margin: 0;
   padding: 0;
+  background-color: #bfdbfe  ;
 }
 
 .App {
@@ -19,6 +20,7 @@ html, body {
   overflow-x: hidden;
   box-sizing: border-box;
   margin: 0 auto;
+  background-color: #bfdbfe  ;
 }
 
 /* Custom styles for home sections */
@@ -189,4 +191,11 @@ header a {
       font-size: 1rem;
       margin-left: 0%;
   }
+}
+
+.header1{
+  background-image: url('./img/collage.jpg');
+    background-size: cover; /* Adjust this based on your needs */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center;
 }

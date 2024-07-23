@@ -12,11 +12,12 @@ html, body {
     width: 100%;
     overflow-x: hidden; /* Prevent horizontal scrolling */
     font-family: 'Montserrat', sans-serif;
-    background-color: #f0f0f0; /* Optional: a light background to contrast with the dark header */
+     /* Optional: a light background to contrast with the dark header */
     color: #333;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #bfdbfe  ;
 }
 
 body {
