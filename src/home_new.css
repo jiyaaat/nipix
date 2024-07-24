@@ -51,10 +51,22 @@ html, body {
 }
 
 /* Responsive styling */
-header {
-  min-height: 100vh;
-  padding: 20px;
-  text-align: center;
+.header1 {
+  position: relative;
+  z-index: 10; /* Ensure it's above other elements */
+}
+
+.header1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('./Animation/Animation - 1721812948213.json'); /* Replace with the correct path */
+  background-size: cover;
+  pointer-events: none; /* Prevents interaction with this pseudo-element */
+  z-index: -1; /* Behind other content */
 }
 
 header .relative {
@@ -194,7 +206,7 @@ header a {
 }
 
 .header1{
-  background-image: url('./img/collage.jpg');
+  background-image: url('./img/photo_clg_2.png');
     background-size: cover; /* Adjust this based on your needs */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-position: center;

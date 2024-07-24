@@ -5,6 +5,7 @@ import TypingText from './TypingText';
 import { useNavigate } from 'react-router-dom';
 import lottie from 'lottie-web';
 import droneAnimation from './Drone/drone_animation.json'; // Adjust path as needed
+import ani from './Animation/Animation - 1721812948213.json'
 import Services from './Services.js';
 import './home_new.css'; // Ensure your styles are correctly imported
 import { aboutData } from './data'; // Import your data as needed
@@ -68,17 +69,17 @@ const Home = () => {
   return (
     <ParallaxProvider>
       <div className="text-center relative">
-        <header id="header" className="header1 min-h-screen flex flex-col items-center justify-center text-white relative" onClick={scrollToHeader}>
-          
-          <div className="relative z-10">
-            <animated.h1 style={fadeIn} className="text-4xl font-black mb-8">
-              <span>NIPIX TECH</span><br /><br />
-              <span><TypingText text="THE FUTURE TECHNOLOGY" /></span>
-            </animated.h1>
-            <a className='mt-14 p-4 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded'
-               onClick={() => navigate('/login')}>Sign Up</a>
-          </div>
-        </header>
+      <header id="header" className="header1 min-h-screen flex flex-col items-center justify-center text-white relative" onClick={scrollToHeader}>
+  <div className="relative z-10">
+    <animated.h1 style={fadeIn} className="text-8xl font-black mb-8">
+      <span className="bg-ani">NIPIX TECH</span><br /><br />
+      <span><TypingText text="THE FUTURE TECHNOLOGY" /></span>
+    </animated.h1>
+    <a className='mt-14 p-4 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded'
+       onClick={() => navigate('/login')}>Sign Up</a>
+  </div>
+</header>
+
 
         <main className="bg-gray-100">
         <section ref={(el) => (sectionsRef.current[0] = el)} className="h-screen py-20 px-6 flex items-center justify-center bg-white">

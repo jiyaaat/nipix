@@ -17,9 +17,6 @@ function NavBar() {
             <img src={logo} alt="Logo" className="logo" />
           </div>
 
-          <NavLink exact to="/" className="nav-logo">
-            <span>NIPIX TECH</span>
-          </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
