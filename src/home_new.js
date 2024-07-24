@@ -71,7 +71,7 @@ const Home = () => {
       <div className="text-center relative">
       <header id="header" className="header1 min-h-screen flex flex-col items-center justify-center text-white relative" onClick={scrollToHeader}>
   <div className="relative z-10">
-    <animated.h1 style={fadeIn} className="text-8xl font-black mb-8">
+    <animated.h1 style={fadeIn} className="heading text-10xl font-black mb-8">
       <span className="bg-ani">NIPIX TECH</span><br /><br />
       <span><TypingText text="THE FUTURE TECHNOLOGY" /></span>
     </animated.h1>

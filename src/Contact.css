@@ -4,7 +4,7 @@
   position: relative;
   width: 400px;
   padding: 40px;
-  background: #196f97;
+  background: white;
   box-sizing: border-box;
   border: 2px solid #196f97;
   box-shadow: 0 0 5px #196f97, 0 0 2px #196f97, 0 0 5px #03e9f4, 0 0 50px #03e9f4;
@@ -14,12 +14,12 @@
 .contact-box h2 {
   margin: 0 0 30px;
   padding: 0;
-  color: #fff;
+  color: black;
   text-align: center;
 }
 
 .contact-box .info {
-  color: #fff;
+  color: black;
   font-size: 16px;
   margin-bottom: 20px;
   text-align: center;
@@ -38,16 +38,16 @@
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
+  color: black;
   margin-bottom: 20px;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid black;
   outline: none;
   background: transparent;
 }
 
 .contact-box .input::placeholder {
-  color: #fff;
+  color: black;
 }
 
 .contact-box form button {

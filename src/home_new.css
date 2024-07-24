@@ -211,3 +211,6 @@ header a {
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-position: center;
 }
+.heading{
+  font-weight: 900 !important;
+}

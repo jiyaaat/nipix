@@ -1,5 +1,6 @@
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';  // Import Font Awesome CSS
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -17,11 +18,11 @@ const Footer = () => {
         {/* Right Section */}
         <div className="flex flex-col items-center md:items-end space-y-2 md:space-y-0 md:space-x-6 mt-2 md:mt-0">
           {/* Navigation Links */}
-          <div className="flex flex-col md:flex-row space-y-2 md:space-y-2 md:space-x-6">
-            <a href="#" className="text-white hover:text-blue-400 text-sm md:text-base">Home</a>
-            <a href="#" className="text-white hover:text-blue-400 text-sm md:text-base">Learn</a>
-            <a href="#" className="text-white hover:text-blue-400 text-sm md:text-base">Events</a>
-            <a href="#" className="text-white hover:text-blue-400 text-sm md:text-base">Sign Up</a>
+          <div className="flex flex-col md:flex-row md:space-x-6">
+            <NavLink to="/" className="text-white hover:text-blue-400 text-sm md:text-base">Home</NavLink>
+            <NavLink to="/Learn" className="text-white hover:text-blue-400 text-sm md:text-base">Learn</NavLink>
+            <NavLink to="/Events" className="text-white hover:text-blue-400 text-sm md:text-base">Events</NavLink>
+            <NavLink to="/Login" className="text-white hover:text-blue-400 text-sm md:text-base">Sign Up</NavLink>
           </div>
 
           {/* Social Media Icons */}

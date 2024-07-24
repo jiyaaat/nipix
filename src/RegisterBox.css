@@ -7,7 +7,7 @@
     width: 400px;
     padding: 40px;
     transform: translate(-50%, -50%);
-    background: #196f97;
+    background: white;
     border: 2px solid #196f97;
     box-sizing: border-box;
     box-shadow: 0 0 5px #196f97, 0 0 2px #196f97, 0 0 5px #03e9f4, 0 0 50px #03e9f4;
@@ -17,7 +17,7 @@
   .register-box h2 {
     margin: 0 0 30px;
     padding: 0;
-    color: #fff;
+    color: black;
     text-align: center;
   }
   
@@ -29,10 +29,10 @@
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
-    color: #fff;
+    color: black;
     margin-bottom: 30px;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid black;
     outline: none;
     background: transparent;
   }
@@ -43,7 +43,7 @@
     left: 0;
     padding: 10px 0;
     font-size: 16px;
-    color: #fff;
+    color: black;
     pointer-events: none;
     transition: .5s;
   }
