@@ -7,7 +7,10 @@
   background: white;
   box-sizing: border-box;
   border: 2px solid #196f97;
+<<<<<<< HEAD
   
+=======
+>>>>>>> b83b8e1d48dbd326142aa60e4a8da0eab2c4c9e5
   border-radius: 10px;
 }
 
@@ -178,7 +181,6 @@
 background: #196f97;
 box-sizing: border-box;
 border: 2px solid #196f97;
-box-shadow: 0 0 5px #196f97, 0 0 2px #196f97, 0 0 5px #03e9f4, 0 0 50px #03e9f4;
 border-radius: 10px;
 margin-left: 1rem;
 padding: 30px;
@@ -239,7 +241,6 @@ outline: 0;
 background: #196f97;
 box-sizing: border-box;
 border: 2px solid #196f97;
-box-shadow: 0 0 5px #196f97, 0 0 2px #196f97, 0 0 5px #03e9f4, 0 0 50px #03e9f4;
 border-radius: 10px;
 padding: 2rem;
 
