@@ -7,10 +7,10 @@ function AI() {
   return (
     <div className='mb-[160px]'>
       <div className="main-content">
-        <div className="content font-black">
+        <div className=" font-black">
           <img src={robo} alt="AI" className="ai-img w-[300px] mx-auto" />
           <h1 className="head">Robotics and Soft Skills Syllabus Overview</h1>
-          <p className='lg:w-[700px] sm:w-[400px] sm:mx-2 mb-8'>Welcome to the Robotics and Soft Skills Program at Nipix Technology! Our comprehensive curriculum is designed to introduce students to the exciting world of robotics while nurturing essential soft skills vital for personal and academic growth. </p>
+          <p className=' para lg:w-[700px] sm:w-[400px] sm:mx-2 mb-8'>Welcome to the Robotics and Soft Skills Program at Nipix Technology! Our comprehensive curriculum is designed to introduce students to the exciting world of robotics while nurturing essential soft skills vital for personal and academic growth. </p>
         </div>
       </div>
       <div className="learning-experience mt-14 mb-[100px]">
