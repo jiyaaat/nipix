@@ -7,11 +7,9 @@ function AI() {
   return (
     <div className='mb-[160px]'>
       <div className="main-content">
-        <div className="content font-black">
-          <img src={robo} alt="AI" className="ai-img w-[300px] mx-auto" />
-          <h1 className="head">Robotics and Soft Skills Syllabus Overview</h1>
-          <p className='lg:w-[700px] sm:w-[400px] sm:mx-2 mb-8'>Welcome to the Robotics and Soft Skills Program at Nipix Technology! Our comprehensive curriculum is designed to introduce students to the exciting world of robotics while nurturing essential soft skills vital for personal and academic growth. </p>
-        </div>
+        <img src={robo} alt="AI" className="ai-img w-[300px]" />
+        <h1 className="head">Robotics and Soft Skills Syllabus Overview</h1>
+        <p>Welcome to the Robotics and Soft Skills Program at Nipix Technology! Our comprehensive curriculum is designed to introduce students to the exciting world of robotics while nurturing essential soft skills vital for personal and academic growth.</p>
       </div>
       <div className="learning-experience mt-14 mb-[100px]">
         <div className="title">What is special About Us?</div>
@@ -20,19 +18,19 @@ function AI() {
             <div className="both">
               <div className="tick-icon"><HiBadgeCheck /></div>
               <div className="content1">
-                <p className='points'><strong>Soft Skills Development:</strong> </p>
+                <p className='points'><strong>Soft Skills Development</strong></p>
               </div>
             </div>
             <div className="both">
               <div className="tick-icon"><HiBadgeCheck /></div>
               <div className="content1">
-                <p className='points'><strong>Interactive Learning Environment:</strong> </p>
+                <p className='points'><strong>Interactive Learning Environment</strong></p>
               </div>
             </div>
             <div className="both">
               <div className="tick-icon"><HiBadgeCheck /></div>
               <div className="content1">
-                <p className='points'><strong>Experienced Instructors</strong> </p>
+                <p className='points'><strong>Experienced Instructors</strong></p>
               </div>
             </div>
           </div>
@@ -40,19 +38,19 @@ function AI() {
             <div className="both">
               <div className="tick-icon"><HiBadgeCheck /></div>
               <div className="content1">
-                <p className='points'><strong>Hands-on Learning</strong> </p>
+                <p className='points'><strong>Hands-on Learning</strong></p>
               </div>
             </div>
             <div className="both">
               <div className="tick-icon"><HiBadgeCheck /></div>
               <div className="content1">
-                <p className='points'><strong>Personalized Guidance</strong> </p>
+                <p className='points'><strong>Personalized Guidance</strong></p>
               </div>
             </div>
             <div className="both">
               <div className="tick-icon"><HiBadgeCheck /></div>
               <div className="content1">
-                <p className='points'><strong>Industry-Relevant Skills</strong> </p>
+                <p className='points'><strong>Industry-Relevant Skills</strong></p>
               </div>
             </div>
           </div>
@@ -105,30 +103,31 @@ function AI() {
             <h2 className='font-black'>Week 10: Soft Skills - Problem-Solving and Critical Thinking</h2>
             <ul>
               <li>Enhancing Problem-Solving Skills</li>
-              <li>Developing Critical Thinking Abilities through Interactive Challenges</li>
+              <li>Engaging in Activities to Foster Critical Thinking</li>
             </ul>
           </div>
           <div className="week">
-            <h2 className='font-black'>Weeks 11-12: Project 3 - Sound-Activated Robot</h2>
+            <h2 className='font-black'>Weeks 11-12: Advanced Robotics Concepts</h2>
             <ul>
-              <li>Introduction to Sound Sensors</li>
-              <li>Hands-On Sound-Activated Robot Project</li>
+              <li>Exploring Advanced Robotics</li>
+              <li>Introduction to AI and Machine Learning in Robotics</li>
+              <li>Hands-On Advanced Robotics Project</li>
             </ul>
           </div>
           <div className="week">
-            <h2 className='font-black'>Week 13: Soft Skills - Adaptability and Resilience</h2>
+            <h2 className='font-black'>Week 13: Soft Skills - Leadership and Time Management</h2>
             <ul>
-              <li>Cultivating Adaptability and Resilience in Facing Challenges</li>
-              <li>Strategies for Managing Change and Overcoming Obstacles</li>
+              <li>Developing Leadership Skills</li>
+              <li>Effective Time Management Strategies</li>
+              <li>Interactive Leadership Activities</li>
             </ul>
           </div>
           <div className="week">
-            <h2 className='font-black'>Weeks 14-16: Soft Skills - Project Showcase and Conclusion</h2>
+            <h2 className='font-black'>Weeks 14-15: Final Project</h2>
             <ul>
-              <li>Project Refinement and Troubleshooting</li>
-              <li>Project Showcase and Peer Evaluation</li>
-              <li>Conclusion and Next Steps</li>
-              <li>Reflection on Soft Skills Development and Future Goals</li>
+              <li>Capstone Project Incorporating All Learned Skills</li>
+              <li>Presentation of Final Projects</li>
+              <li>Feedback and Assessment</li>
             </ul>
           </div>
         </div>

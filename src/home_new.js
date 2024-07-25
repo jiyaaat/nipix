@@ -130,6 +130,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            
           </section>
 
           {/* Our Services Section */}
